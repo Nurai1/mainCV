@@ -1,0 +1,30 @@
+@import './../../attributes.scss';
+
+.cards{
+  background: #F4F4F6;
+}
+
+.cards__wrapper{
+  justify-content: space-between;
+}
+
+.cards__wrapper__first-col{
+  display: inline-block;
+  width: 380px;
+}
+
+.cards__wrapper__first-col > *,
+.cards__wrapper__second-col > *,
+.cards__wrapper__third-col > *{
+  margin-bottom: 40px;
+}
+
+.cards__wrapper__second-col{
+  display: inline-block;
+  width: 380px;
+}
+
+.cards__wrapper__third-col{
+  display: inline-block;
+  width: 320px;
+}

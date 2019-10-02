@@ -1,0 +1,21 @@
+.landing-wrapper{
+  position: relative;
+  width: 100%;
+  height: 830px;
+  background: url('./../../images/landing-background.png') center no-repeat;
+  background-size: cover;
+}
+
+.landing-wrapper__filter{
+  position: relative;
+  left: 130px;
+  top: 70px;
+}
+
+.landing-wrapper__text{
+  position: absolute;
+  right: 130px;
+  bottom: 18px;
+  width: 280px;
+  text-align: right;
+}

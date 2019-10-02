@@ -1,0 +1,46 @@
+.icon-text-list{
+  width:291px;
+  height:158px;
+  display: inline-block;
+}
+
+.icon-text-list__part{
+  display:flex;
+  position: relative;
+}
+
+.icon-text-list__part__icon{
+  width:48px;
+  height:48px;
+  font-family: Material Icons;
+  font-size: 48px;
+  line-height: 41px;
+  color: $purple;
+  margin-right:10px;
+}
+
+.icon-text-list__part__icon_emotion{
+  @include material-icon('tag_faces');
+}
+
+.icon-text-list__part__icon_city{
+  @include material-icon('location_city');
+}
+
+.icon-text-list__part__text > .text-bold{
+    font-weight: bold;
+}
+
+.icon-text-list__part:after{
+  content:'';
+  position:absolute;
+  top:65px;
+  left:0;
+  width:280px;
+  height:1px;
+  background: fade-out($dark-shade, .9);
+}
+
+.icon-text-list__part__text.above-text{
+  margin-bottom:41px;
+}

@@ -1,0 +1,24 @@
+.room-filtered.cards-wrapper
+  span.room__number №888
+  span.room__feature люкс
+  span.room__text <strong>9990₽</strong> в сутки
+  include ./../../../blocks/date-dropdown/date-dropdown.pug
+  span.room-filter__dropdown
+    +form-el-container("гости")
+      include ./../../../blocks/dropdown/_guests/_guests.pug	
+  div.room-filtered__info
+    span.room-filtered__info__left 
+      span 9990₽ x 4 суток <br>
+      span Сбор за услуги: скидка 2 179₽ <br>
+      span Сбор за дополнительные услуги 
+    span.room-filtered__info__i
+      span i
+      span i
+    span.room-filtered__info__right 
+      span 39960₽
+      span 0₽
+      span 300₽
+    span.room-filtered__info__sum Итого <span class="__points"></span> 38 081₽
+  span.cards__accauntBtn
+    +btn_with-arrow("забронировать")
+  

@@ -1,0 +1,29 @@
+mixin expandable-checkbox(checkboxTitle)
+  div(class="expandable-checkbox")
+    p(class="checkbox__text")= checkboxTitle
+      span(class="checkbox__text__arrow")
+    div(class="expandable-checkbox-wrapper")
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="breakfast")
+        label(class="checkbox__btn" for="breakfast") Завтрак
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="table" checked)
+        label(class="checkbox__btn" for="table") Письменный стол
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="child-chair" checked)
+        label(class="checkbox__btn" for="child-chair") Стул для кормления
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="child-bed")
+        label(class="checkbox__btn" for="child-bed") Кроватка
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="TV" checked)
+        label(class="checkbox__btn" for="TV") Телевизор
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="shampoo" checked)
+        label(class="checkbox__btn" for="shampoo") Шампунь
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="TV1" checked)
+        label(class="checkbox__btn" for="TV1") Телевизор
+      div(class="checkbox__part expandable-checkbox__part")
+        input(type="checkbox" id="shampoo1" checked)
+        label(class="checkbox__btn" for="shampoo1") Шампунь

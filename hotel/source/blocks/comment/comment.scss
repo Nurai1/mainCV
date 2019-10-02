@@ -1,0 +1,49 @@
+.comment{
+  width:711px;
+  height:133px;
+  display: inline-block;
+}
+
+.comment__author{
+  margin-bottom:12px;
+
+  .__photo{
+    display:inline-block;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+    border-radius: 24px;
+    margin-right:10px;
+  }
+
+  .__photo_Murad{
+    background: url('./images/comment-author.png');
+    background-position: -21px -11px;
+  }
+
+  .__info{
+    display:inline-block;
+    position:relative;
+    top:-6px;
+    height:48px;
+    .__name{
+      font-weight: bold;
+    }
+  }
+
+}
+
+.comment__like{
+  margin-left:4px;
+  .like-btn{
+    margin:0;
+  }
+}
+
+.comment__text{
+  display:inline-block;
+  margin-left:58px;
+  position:relative;
+  top: -25px;
+}

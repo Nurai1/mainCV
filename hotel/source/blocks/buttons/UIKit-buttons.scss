@@ -1,0 +1,41 @@
+.UIKit-buttons{
+  width: 218px;
+  height: 195px;
+  display:inline-block;
+
+  span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark-shade;
+  }
+
+  .btn_purple_hover{
+    margin: 16px 0 0 13px;
+    opacity:0.5;
+  }
+
+  .btn_purple-border_hover{
+    margin: 30px 0 31px 13px;
+    border-color: fade-out($purple, .5);
+  }
+
+  span.btn-word-purple{
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    margin-right: 20px;
+  }
+
+  span.btn-word{
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: fade-out($dark-shade, .5);
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+.room-filter.cards-wrapper
+  span.cards__title Найдём номера под ваши пожелания
+  include ./../../../blocks/date-dropdown/date-dropdown.pug
+  span.room-filter__dropdown
+    +form-el-container("гости")
+      include ./../../../blocks/dropdown/_guests/_guests.pug	
+  span.cards__accauntBtn
+    +btn_with-arrow("подобрать номер")

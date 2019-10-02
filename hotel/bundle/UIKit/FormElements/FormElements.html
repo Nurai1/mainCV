@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form elements</title>
+  <link href="FormElements.css" rel="stylesheet"></head>
+  <body>
+    <div class="form-el"><svg class="logo" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
+<path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
+<path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
+</svg>
+      <div class="page__wrapper form-el__wrapper">
+        <div class="form-el__wrapper__first-col">
+              <div class="form-el-container"><span class="form-el-container__title">text field</span><span class="form-el-container__additional-word">default</span><br>
+<input class="text-field__input" id="" placeholder="Email">
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">text field</span><span class="form-el-container__additional-word">hover/focus</span><br>
+<input class="text-field__input text-field__input--hoverfocus" id="" placeholder="Email" value="This is a pretty awesome">
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">dropdown</span><span class="form-el-container__additional-word">default</span><br>
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">Сколько гостей</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a></div>
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">masked text field</span><span class="form-el-container__additional-word">default</span><br>
+<input class="text-field__input text-field__input--masked" placeholder="ДД.ММ.ГГГГ">
+              </div>
+<div class="date-dropdown"> 
+  <div class="date-dropdown__part date-dropdown__part-from">
+    <label for="dateFrom">date dropdown</label><span class="date-dropdown__arrow"></span>
+    <input class="dateFrom" id="dateFrom" type="text" placeholder="ДД.ММ.ГГГГ">
+  </div>
+  <div class="date-dropdown__part">
+    <label for="dateTo">date dropdown</label><span class="date-dropdown__arrow"></span>
+    <input class="dateTo" id="dateTo" type="text" placeholder="ДД.ММ.ГГГГ" value="19.08.2019">
+  </div>
+</div>
+              <div class="form-el-container"><span class="form-el-container__title">filter date dropdown</span><span class="form-el-container__additional-word"></span><br><span class="date-dropdown--filter__arrow date-dropdown__arrow"> </span>
+<input class="text-field__input text-field__input--filter" id="filter" value="19авг - 23авг">
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">subscription text field</span><span class="form-el-container__additional-word"></span><br>
+                    <div class="input_sub-wrapper">
+                      <input class="text-field__input text-field__input_sub" placeholder="Email"><span class="text-field_sub-arrow"></span>
+                    </div>
+              </div>
+        </div>
+        <div class="form-el__wrapper__second-col">
+<div class="checkbox">
+  <p class="checkbox__text">checkbox buttons</p>
+  <div class="checkbox__part">
+    <input type="checkbox" id="smoke">
+    <label class="checkbox__btn" for="smoke">Можно курить</label>
+  </div>
+  <div class="checkbox__part">
+    <input type="checkbox" id="pet" checked>
+    <label class="checkbox__btn" for="pet">Можно с питомцами</label>
+  </div>
+  <div class="checkbox__part">
+    <input type="checkbox" id="guests" checked>
+    <label class="checkbox__btn" for="guests">Можно пригласить гостей<br>(до 10 человек)</label>
+  </div>
+</div>
+              <div class="form-el-container"><span class="form-el-container__title">radio buttons</span><span class="form-el-container__additional-word"></span><br>
+              </div>
+<div class="radio-btns">
+  <div class="radio-btns-wrapper">
+    <input type="radio" id="man" name="radio" checked>
+    <label class="radio-btns__btn" for="man">Мужчина</label>
+  </div>
+  <div class="radio-btns-wrapper">
+    <input type="radio" id="woman" name="radio">
+    <label class="radio-btns__btn" for="woman">Женщина</label>
+  </div>
+</div>
+              <div class="form-el-container"><span class="form-el-container__title">toggle</span><span class="form-el-container__additional-word"></span><br>
+<div class="toggle">
+  <input type="checkbox" id="specialOffer" checked>
+  <label class="toggle__btn" for="specialOffer">Получать спецпредложения</label>
+</div>
+<div class="toggle toggle--disabled">
+  <input type="checkbox" id="specialOffer">
+  <label class="toggle__btn" for="specialOffer">Получать спецпредложения</label>
+</div>
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">like button</span><span class="form-el-container__additional-word"></span><br>
+<div class="like-btn"> <span class="like-btn__heart"> </span><span class="like-btn__sum">0 </span></div>
+<div class="like-btn_active like-btn"> <span class="like-btn__heart"> </span><span class="like-btn__sum">12</span></div>
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">rate button</span><span class="form-el-container__additional-word"></span><br>
+                    <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span>
+                    </div>
+                    <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                    </div>
+              </div>
+        </div>
+        <div class="form-el__wrapper__third-col">
+<div class="price-range"><span class="price-range__title">диапазон цены</span><span class="price-range__slider-result"></span>
+  <div class="price-range__slider"></div>
+  <p class="price-range__text">Стоимость за сутки пребывания в номере</p>
+</div>
+<div class="UIKit-buttons"><span>buttons<br></span>
+  <div class="btn btn_purple">click me</div>
+  <div class="btn btn_purple btn_purple_hover">click me</div>
+  <div class="btn btn_purple-border">click me</div>
+  <div class="btn btn_purple-border btn_purple-border_hover">click me</div><span class="btn-word-purple">click me</span><span class="btn-word">click me</span>
+</div>
+              <div class="btn btn_with-arrow"> <span>перейти к оплате</span><svg class = 'arrow-at-btn' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="white"/>
+</svg>
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">pagination</span><span class="form-el-container__additional-word"></span><br>
+<div class="pagination-wrapper">
+  <ul class="pagination">
+    <li class="pagination__active-item"> <span>1</span></li>
+    <li> <span>2 </span></li>
+    <li> <span>3 </span></li>
+    <li> <span>... </span></li>
+    <li> <span>15 </span></li>
+    <li class="pagination__arrow-item"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.426758L17.0156 8.44238L9 16.458L7.59375 15.0518L13.1719 9.42676H0.984375V7.45801H13.1719L7.59375 1.83301L9 0.426758Z" fill="white"/>
+</svg>
+    </li>
+  </ul>
+  <p>1-12 из 100+ вариантов аренды</p>
+</div>
+              </div>
+        </div>
+        <div class="form-el__wrapper__fourth-col">
+              <div class="form-el-container"><span class="form-el-container__title">dropdown</span><span class="form-el-container__additional-word">default</span><br>
+<div class="dropdown-wrapper">
+  <div class="btn-dropdown btn-dropdown_features"> 
+    <div class="btn-dropdown-text btn-dropdown_features-text"> <span class="btn-dropdown_features-text__bedroom-count">2</span><span class="btn-dropdown_features-text__bedroom-word">&nbspспальни, </span><span class="btn-dropdown_features-text__bed-count">2</span><span class="btn-dropdown_features-text__bed-word">&nbspкровати...</span></div>
+    <div class="btn-dropdown__arrow btn-dropdown_features__arrow"></div>
+  </div>
+</div>
+              </div>
+              <div class="form-el-container"><span class="form-el-container__title">dropdown</span><span class="form-el-container__additional-word">expanded</span><br>
+<div class="dropdown-wrapper dropdown_features-wrapper">
+  <div class="btn-dropdown btn-dropdown_features"> 
+    <div class="btn-dropdown-text btn-dropdown_features-text"> <span class="btn-dropdown_features-text__bedroom-count">2</span><span class="btn-dropdown_features-text__bedroom-word">&nbspспальни, </span><span class="btn-dropdown_features-text__bed-count">2</span><span class="btn-dropdown_features-text__bed-word">&nbspкровати...</span></div>
+    <div class="btn-dropdown__arrow btn-dropdown_features__arrow"></div>
+  </div>
+  <ul class="dropdown dropdown_features" id="expanded"> 
+    <li>спальни 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bedroom-minus">-</span><span class="dropdown__count bedroom-count">2</span><span class="dropdown__plus-circle bedroom-plus">+</span></div>
+    </li>
+    <li>кровати 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bed-minus">-</span><span class="dropdown__count bed-count">2</span><span class="dropdown__plus-circle bed-plus">+</span></div>
+    </li>
+    <li>ванные комнаты
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bathroom-minus">-</span><span class="dropdown__count bathroom-count">0</span><span class="dropdown__plus-circle bathroom-plus">+</span></div>
+    </li>
+  </ul>
+</div>
+              </div>
+<div class="expandable-checkbox expandable-checkbox--default">
+  <p class="checkbox__text">expandable checkbox list<span class="checkbox__text__arrow"></span></p>
+</div>
+<div class="expandable-checkbox expandable-checkbox--expanded">
+  <p class="checkbox__text">expandable checkbox list<span class="checkbox__text__arrow" style="transform:rotateZ(270deg)"></span></p>
+  <div class="expandable-checkbox-wrapper" id="expanded">
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="breakfast">
+      <label class="checkbox__btn" for="breakfast">Завтрак</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="table" checked>
+      <label class="checkbox__btn" for="table">Письменный стол</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="child-chair" checked>
+      <label class="checkbox__btn" for="child-chair">Стул для кормления</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="child-bed">
+      <label class="checkbox__btn" for="child-bed">Кроватка</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="TV" checked>
+      <label class="checkbox__btn" for="TV">Телевизор</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="shampoo" checked>
+      <label class="checkbox__btn" for="shampoo">Шампунь</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="TV1" checked>
+      <label class="checkbox__btn" for="TV1">Телевизор</label>
+    </div>
+    <div class="checkbox__part expandable-checkbox__part">
+      <input type="checkbox" id="shampoo1" checked>
+      <label class="checkbox__btn" for="shampoo1">Шампунь</label>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="form-el__wrapper__fifth-col">
+              <div class="form-el-container"><span class="form-el-container__title">dropdown</span><span class="form-el-container__additional-word"></span><br>
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">Сколько гостей</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a>
+  <ul class="dropdown dropdown_guests" id="expanded"> 
+    <li>взрослые 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle adults-minus">-</span><span class="dropdown__count adults-count">0</span><span class="dropdown__plus-circle adults-plus">+</span></div>
+    </li>
+    <li>дети 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle kids-minus">-</span><span class="dropdown__count kids-count">0</span><span class="dropdown__plus-circle kids-plus">+</span></div>
+    </li>
+    <li>младенцы
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle babies-minus">-</span><span class="dropdown__count babies-count">0</span><span class="dropdown__plus-circle babies-plus">+</span></div>
+    </li>
+    <li> 
+      <div class="dropdown_guests__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
+    </li>
+  </ul>
+</div>
+              </div>
+              <div class="rich-checkbox">
+                <p class="checkbox__text">rich checkbox buttons</p>
+                <div class="checkbox__part">
+                  <input type="checkbox" id="wide-coridor">
+                  <label class="checkbox__btn rich-checkbox__btn" for="wide-coridor">Широкий коридор</label><span class="rich-checkbox__part__text">Ширина коридоров в номере <br>не менее 91 см.</span>
+                </div>
+                <div class="checkbox__part">
+                  <input type="checkbox" id="invalid-helper">
+                  <label class="checkbox__btn rich-checkbox__btn" for="invalid-helper">Помощник для инвалидов</label><span class="rich-checkbox__part__text">На 1 этаже вас встретит специалист<br> и проводит до номера.</span>
+                </div>
+              </div>
+        </div>
+        <div class="form-el__wrapper__sixth-col">
+              <div class="form-el-container"><span class="form-el-container__title">dropdown</span><span class="form-el-container__additional-word"></span><br>
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">3 гостя</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a>
+  <ul class="dropdown dropdown_guests dropdown_guests--expanded-filled" id="expanded"> 
+    <li>взрослые 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle adults-minus">-</span><span class="dropdown__count adults-count">2</span><span class="dropdown__plus-circle adults-plus">+</span></div>
+    </li>
+    <li>дети 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle kids-minus">-</span><span class="dropdown__count kids-count">1</span><span class="dropdown__plus-circle kids-plus">+</span></div>
+    </li>
+    <li>младенцы
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle babies-minus">-</span><span class="dropdown__count babies-count">0</span><span class="dropdown__plus-circle babies-plus">+</span></div>
+    </li>
+    <li> 
+      <div class="dropdown_guests__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
+    </li>
+  </ul>
+</div>
+              </div>
+              <div class="bullet-list">
+                <p class="bullet-list__text">bullet-list</p>
+                <ul class="bullet-list-wrapper">
+                  <li>Нельзя с питомцами</li>
+                  <li>Без вечеринок и мероприятий</li>
+                  <li>Время прибытия - после 13:00,<br>а выезд до 12:00</li>
+                </ul>
+              </div>
+          <!--include ./../../blocks/bullet-list/bullet-list.pug-->
+        </div>
+<div class="icon-text-list">
+  <div class="icon-text-list__part"> <span class="icon-text-list__part__icon icon-text-list__part__icon_emotion"></span>
+    <p class="icon-text-list__part__text above-text"> <span class="text-bold">Комфорт<br></span><span>Шумопоглощающие стены</span></p>
+  </div>
+  <div class="icon-text-list__part"> <span class="icon-text-list__part__icon icon-text-list__part__icon_city"></span>
+    <p class="icon-text-list__part__text"> <span class="text-bold">Удобство<br></span><span>Окно в каждой из спален</span></p>
+  </div>
+</div>
+<div class="comment">
+  <div class="comment__author"><span class="__photo __photo_Murad"></span>
+    <p class="__info"><span class="__name">Мурад Сарафанов<br></span><span class="__time">5 дней назад</span></p>
+  </div><span class="comment__like"> 
+<div class="like-btn"> <span class="like-btn__heart"> </span><span class="like-btn__sum">0 </span></div></span>
+  <p class="comment__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+</div>
+      </div>
+    </div>
+  <script type="text/javascript" src="FormElements.js"></script></body>
+</html>

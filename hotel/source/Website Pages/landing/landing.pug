@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title Landing page
+  body
+    include ./../../mixins/mixins.pug
+    +header(false)
+    .landing-wrapper
+      .room-filter.cards-wrapper.landing-wrapper__filter
+        span.cards__title Найдём номера под ваши пожелания
+        include ./../../blocks/date-dropdown/date-dropdown.pug
+        span.room-filter__dropdown
+          +form-el-container("гости")
+            include ./../../blocks/dropdown/_guests/_guests.pug	
+        span.cards__accauntBtn
+          +btn_with-arrow("подобрать номер")
+      .landing-wrapper__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+    include ./../../UI kit/headers&footers/footer-widgetsNcopyright.pug

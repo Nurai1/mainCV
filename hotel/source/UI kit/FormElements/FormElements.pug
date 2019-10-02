@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title Form elements
+  body
+    include ./../../mixins/mixins.pug
+    div(class="form-el")
+      include ./../../blocks/logo/logo.pug
+      div(class="page__wrapper form-el__wrapper")
+        
+        div(class="form-el__wrapper__first-col")
+          +form-el-container("text field", 'default')
+            include ./../../blocks/text-field/text-field.pug
+          +form-el-container("text field", 'hover/focus')
+            include ./../../blocks/text-field/text-field--hoverfocus.pug	
+          +form-el-container("dropdown", 'default')
+            include ./../../blocks/dropdown/_guests/_guests--default.pug	
+          +form-el-container("masked text field", 'default')
+            include ./../../blocks/text-field/text-field--masked.pug	
+          include ./../../blocks/date-dropdown/date-dropdown--example.pug
+          +form-el-container("filter date dropdown")
+            include ./../../blocks/date-dropdown/date-dropdown--filter--example.pug
+          +form-el-container("subscription text field")
+            +text-field_sub('Email')
+            
+        div(class="form-el__wrapper__second-col")
+          include ./../../blocks/checkbox/checkbox.pug
+          +form-el-container('radio buttons')
+          include ./../../blocks/radio-btns/radio-btns.pug
+          +form-el-container('toggle')
+            include ./../../blocks/toggle/toggle.pug
+            include ./../../blocks/toggle/toggle--disabled.pug
+          +form-el-container('like button')
+            include ./../../blocks/like-btn/like-btn.pug
+            include ./../../blocks/like-btn/like-btn_active.pug
+          +form-el-container("rate button")
+            +rate-btn(4)
+            +rate-btn(5)
+            
+        div(class="form-el__wrapper__third-col")
+          include ./../../blocks/range-slider/range-slider.pug
+          include ./../../blocks/buttons/UIKit-buttons.pug
+          +btn_with-arrow("перейти к оплате")
+          +form-el-container("pagination")
+            include ./../../blocks/pagination/pagination.pug
+            
+        div(class="form-el__wrapper__fourth-col")
+          +form-el-container("dropdown", 'default')
+            include ./../../blocks/dropdown/_features/_features--default.pug
+          +form-el-container("dropdown", 'expanded')
+            include ./../../blocks/dropdown/_features/_features--expanded.pug		
+          include ./../../blocks/checkbox/expandable-checkbox/expandable-checkbox--default.pug
+          include ./../../blocks/checkbox/expandable-checkbox/expandable-checkbox--expanded.pug
+
+        div(class="form-el__wrapper__fifth-col")
+          +form-el-container("dropdown")
+            include ./../../blocks/dropdown/_guests/_guests--expanded.pug	   
+          +rich-checkbox("rich checkbox buttons")
+
+        div(class="form-el__wrapper__sixth-col")
+          +form-el-container("dropdown")
+            include ./../../blocks/dropdown/_guests/_guests--expanded-filled.pug
+          +bullet-list('bullet-list')
+          //include ./../../blocks/bullet-list/bullet-list.pug
+
+        include ./../../blocks/icon-text-list/icon-text-list.pug
+        include ./../../blocks/comment/comment.pug

@@ -1,0 +1,53 @@
+@import './attributes.scss';
+$material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
+@import'~material-design-icons-iconfont/src/_mixins.scss';
+@import'~material-design-icons-iconfont/src/_variables.scss';
+@import '~material-design-icons-iconfont/src/material-design-icons.scss';
+@import './blocks/buttons/UIKit-buttons.scss';
+@import './blocks/buttons/btn.scss';
+@import './blocks/buttons/btn_purple/btn_purple.scss';
+@import './blocks/buttons/btn_purple-border/btn_purple-border.scss';
+@import './blocks/buttons/btn_with-arrow/btn_with-arrow.scss';
+@import './blocks/range-slider/range-slider.scss';
+@import './blocks/pagination/pagination.scss';
+@import './blocks/text-field/text-field.scss';
+@import './blocks/text-field/text-field_sub.scss';
+@import './blocks/dropdown/dropdown.scss';
+@import './blocks/dropdown/_guests/_guests.scss';
+@import './blocks/dropdown/_features/_features.scss';
+@import './blocks/date-dropdown/date-dropdown.scss';
+@import './blocks/date-dropdown/date-dropdown--filter.scss';
+@import './blocks/checkbox/checkbox.scss';
+@import './blocks/radio-btns/radio-btns.scss';
+@import './blocks/toggle/toggle.scss';
+@import './blocks/like-btn/like-btn.scss';
+@import './blocks/rate-btn/rate-btn.scss';
+@import './blocks/checkbox/expandable-checkbox/expandable-checkbox.scss';
+@import './blocks/checkbox/rich-checkbox/rich-checkbox.scss';
+@import './blocks/bullet-list/bullet-list.scss';
+@import './blocks/icon-text-list/icon-text-list.scss';
+@import './blocks/comment/comment.scss';
+@import './blocks/dropdown/_guests/_guests--expanded-filled.scss';
+
+//**UI Kit: Template
+@import './UI kit/UIKit.scss';
+
+//**UI Kit: FormElements
+//** no need cause more bundles @import './UI kit/FormElements/FormElements.scss';
+
+//**UI Kit: Cards
+//** no need cause more bundles @import './UI Kit/cards/cards.scss';
+@import './UI Kit/cards/signUp/signUp.scss';
+@import './UI Kit/cards/signIn/signIn.scss';
+@import './UI Kit/cards/room-filter/room-filter.scss';
+@import './UI Kit/cards/room-filtered/room-filtered.scss';
+@import './UI Kit/cards/room-properties/room-properties.scss';
+
+//**UI Kit: headers&footers
+//** no need cause more bundles @import './UI Kit/headers&footers/headersNfooters.scss';
+@import './UI Kit/headers&footers/header.scss';
+@import './UI Kit/headers&footers/footer-creative.scss';
+@import './UI Kit/headers&footers/footer-widgetsNcopyright.scss';
+
+//**UI Kit: colors&type
+//** no need cause more bundles @import './UI Kit/colors&type/colorsNtype.scss';

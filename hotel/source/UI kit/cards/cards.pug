@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title Cards
+  body
+    include ./../../mixins/mixins.pug
+    div(class="cards")
+      include ./../../blocks/logo/logo.pug
+      div(class="page__wrapper cards__wrapper")
+        div(class="cards__wrapper__first-col")
+          include ./room-filter/room-filter.pug
+          include ./signUp/signUp.pug
+        div(class="cards__wrapper__second-col")
+          include ./room-filtered/room-filtered.pug
+          include ./signIn/signIn.pug
+        div(class="cards__wrapper__third-col")
+          div(class='date-dropdown__calendar' id='cards__calendar')
+          +room-properties('room-photo1.png', true, 888, true, '9990₽', 5, 145)
+          +room-properties('room-photo2.png', false, 840, false, '9990₽', 4, 65)

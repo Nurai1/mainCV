@@ -1,0 +1,35 @@
+.bullet-list{
+  width:292px;
+  height:147px;
+  display: inline-block;
+}
+
+.bullet-list__text{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-shade;
+  margin-bottom: 16px;
+}
+
+.bullet-list-wrapper{
+
+  li{
+    position:relative;
+    left:20px;
+    color: fade-out($dark-shade, .25);
+    margin-bottom: 10px;
+  }
+
+  li:before{
+    content:"";
+    position:absolute;
+    top:7px;
+    left:-20px;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    background: fade-out($dark-shade, .75);
+  }
+}

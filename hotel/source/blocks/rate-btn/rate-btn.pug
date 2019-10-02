@@ -1,0 +1,8 @@
+mixin rate-btn(rateNum)
+  div(class="rate-btn")
+    -for (var i=0;i<rateNum;i++){
+    span(class="rate-btn__star rate-btn__star_active") 
+    -}
+    -for (var i=(rateNum);i<5;i++){
+    span(class="rate-btn__star") 
+    -}

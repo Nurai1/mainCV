@@ -1,0 +1,148 @@
+$purple-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$green-gradient: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+$dark-shade: #1F2041;
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+body{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: fade-out($dark-shade, 0.25);
+}
+
+
+%material-icon-class{
+  //**Кроссбраузерность иконки
+  font-family: "Material Icons";
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+%word-title-style{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.form-el-container__title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.form-el-container__additional-word{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  float: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.form-el-container{
+  display: inline-block;
+}
+
+#expanded{
+  display: inline-block;
+}
+
+//** Стили для карточек.
+
+.cards-wrapper{
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 32px 30px;
+}
+
+
+.cards__input{
+  margin-bottom: 10px;
+}
+
+.cards__title{
+  display: inline-block;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $dark-shade;
+  margin-bottom: 20px;
+}
+
+.btn_cards{
+  float: right;
+}
+
+.cards__text{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cards__accauntBtn{
+  display: inline-block;
+  margin: 20px 0 30px;
+}
+
+
+.room__number{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-shade;
+  margin-right: 5px;
+}
+
+.room__feature{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+}
+
+.room__text{
+  font-size: 14px;
+  line-height: 18px;
+  color: fade-out($dark-shade, .5);
+  float: right;
+  position: relative;
+  top:3px;
+}
+
+#cards__calendar{
+  display: inline-block;
+}
+
+//**общий стиль
+
+.page__wrapper{
+  width:1160px;
+  margin-left: auto; //140px
+  margin-right: auto; //140px для статических блоков
+  display:flex;
+  flex-wrap: wrap;
+}

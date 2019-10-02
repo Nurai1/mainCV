@@ -1,0 +1,30 @@
+@import './../../attributes.scss';
+
+.headersNfooters{
+  background: #F4F4F6;;
+}
+
+.header-logOut{
+  margin: 40px 0;
+}
+.header-logIn{
+  margin: 40px 0;
+}
+
+.footer-info{
+  margin: 40px 0;
+}
+
+.footer-main{
+  margin-bottom: 130px;
+}
+
+.logo__text{
+  display: inline-block;
+  color: $dark-shade;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-left: 12.5px;
+  position: relative;
+  bottom: 15px;
+}

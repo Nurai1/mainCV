@@ -1,0 +1,414 @@
+@import 'fonts';
+
+$text-color:#3f3f3f;
+$light-grey:#8f8f8f;
+$text-active-color:#ec6e61;
+$faded-red:#ea5a4b;
+
+*{
+outline:0;
+margin:0;
+border:0;
+padding:0;
+}
+
+%main-wrapper {
+width:940px;
+margin:0 auto;
+padding-left:10px;
+padding-right:10px;
+}
+
+.wrapper, .photos-wrapper, .gallery-wrapper, .features-wrapper{
+    @extend %main-wrapper;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+.header__topbar{
+	height:47px;
+	background:url(images/header-topbar.gif) center;
+}
+
+.header__social-network-container{  
+    float:right;
+}
+
+
+.header__social-network__item{
+    display:inline-block;
+    background:url(images/header-sprites.png) no-repeat;
+	margin:13px 8px 0;
+	cursor:pointer;
+}
+
+.header__social-network__item--twitter{
+    background-position: -20px -12px ;
+	width: 26px;
+	height: 15px;
+}
+.header__social-network__item--facebook{
+    background-position: -58px -12px ;
+	width: 8px;
+	height: 16px;
+}
+
+.header__social-network__item--dribbble{
+    background-position: -87px -9px ;
+	width: 16px;
+	height: 16px;
+}
+.header__social-network__item--rss{
+    background-position: -118px -9px ;
+	width: 17px;
+	height: 17px;
+}
+
+.header__navigation{
+	margin-top:20px;
+	margin-bottom:15px;
+	display:flex;
+	justify-content:space-between;
+}
+	
+.header__navigation__logo{
+	font-family:"Bitter", serif;
+    font-size:24px;	
+	color:$text-color;
+	width:55%;
+	
+	.logo__ico{
+		padding: 7px 13px;
+		margin-right:5px;
+		background-color:$faded-red;
+		color:white;
+		cursor:pointer;
+	}
+}
+
+.header__navigation__item a{
+    text-transform:uppercase;
+	color:$text-color;
+	font-family:'HelveticaNeueBold';
+	font-size:12px;
+	line-height:16px;
+	
+}
+
+.header__navigation__item a:hover{
+    color:$text-active-color;
+}
+.header__navigation__item--active a{
+	color:$text-active-color;
+}
+.photo-preview{
+	position:relative;
+    background:url(images/top-photo.gif) no-repeat center ;
+    height:450px;
+}
+.photo-preview__text{
+	position:absolute;
+	top:100px;
+	width:340px;
+}
+
+.photo-preview__title{
+	display:inline-block;
+	font-family:"Bitter";
+	font-weight:bold;
+	font-size:24px;
+	color:white;
+	background-color:rgba(23,23,23,70%);
+	padding:5px 0;
+	margin-bottom:2px;
+}
+
+.photo-preview__arrow{
+	display:inline-block;
+	margin-top:10px;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+}
+.left-arrow{
+	background:$faded-red url(images/left-arrow.png) no-repeat center;
+}
+.right-arrow{
+	background:$faded-red url(images/right-arrow.png) no-repeat center;
+}
+
+.photos{
+    position:relative;
+    top:-25px;
+	background:url(images/header-topbar.gif);
+	display:flex;
+	justify-content:space-between;
+	padding:20px ;
+	margin-bottom:30px;
+}
+
+.photos{ 
+    img{
+	    width:77px;
+	    height:77px;
+	    object-fit:cover;
+    }
+
+	.photos__active{
+	    box-sizing:border-box;
+        border:1px solid $faded-red;
+    }
+}
+
+
+.features{
+	margin-top:30px;
+	margin-bottom:50px;
+	padding:0 10px;
+    display:flex;
+}
+
+.features__container{
+	padding:0 10px;
+}
+
+.features__title{
+	position:relative;
+	font-family:"Bitter";
+	font-size:18px;
+	color:$text-color;
+	padding:10px 0;
+	margin-bottom:16px;
+	text-indent:48px;
+}
+
+.features__title:before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:30px;
+	height:30px;
+}
+
+.features__title1:before{
+	background:url(images/features__photo1.png) no-repeat center, 
+	url(images/features__photo-container.png);
+}
+
+.features__title2:before{
+	background:url(images/features__photo2.png) no-repeat center, 
+	url(images/features__photo-container.png);
+}
+
+.features__title3:before{
+	background:url(images/features__photo3.png) no-repeat center, 
+	url(images/features__photo-container.png);
+}
+
+.features__text{
+	font-family:"HelveticaNeue";
+	font-size:14px;
+	line-height:16px;
+	color:$light-grey;
+}
+
+.center-text{
+	margin:50px auto 25px;
+	padding:0 10px;
+	width:310px;
+	font-family:"Bitter";
+	font-size:18px;
+	color:$text-color;
+	
+	span{
+		padding:10px;
+		background:$faded-red;
+	    color:#fff;
+	}
+}
+
+.gallery{
+	padding:0 20px;
+	background:#fff;
+}
+
+.gallery__text{
+	font-family:"Bitter";
+	font-size:14px;
+	line-height:16px;
+	color:#252525;
+	padding:10px 8px;
+}
+
+.gallery__text--active{
+	color:#fff;
+	background:$faded-red;
+}
+
+.gallery__text:hover{
+	color:#fff;
+	background:$faded-red;
+	cursor:pointer;
+}
+
+.gallery__nav{
+	margin-bottom:25px;
+}
+
+.gallery__photos{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	div{
+    	position:relative;
+    	margin-bottom:20px;
+    	img{
+    		width:205px;
+    	    height:120px;
+    		object-fit:cover;
+    	    object-position:center 10%;
+    	}
+	}
+}
+
+.gallery__photo:before{
+	position:absolute;
+	padding-left:10px;
+	box-sizing:border-box;
+	height:0;
+	width:205px;
+	bottom:4px;
+	background:rgba(0,0,0,60%);
+	font-family:"Bitter";
+	font-weight:bold;
+	font-size:14px;
+	line-height:16px;
+	color:#fff;
+	transition:all 0.3s ease-in-out;
+}
+
+.gallery__photo:hover.gallery__photo:before{
+	padding-top:10px;
+	padding-bottom:10px;
+	height:36px;
+}
+
+.gallery__photo1:before{
+	content:"Business Cards";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo2:before{
+	content:"Flowers";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo3:before{
+	content:"Ice Rink";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo4:before{
+	content:"Jesus Poster";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo5:before{
+	content:"Wedding ring";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo6:before{
+	content:"Groom";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo7:before{
+	content:"The Beautiful Photo";
+	height:0;
+	overflow:hidden;
+}
+.gallery__photo8:before{
+	content:"Wedding Photo";
+	height:0;
+	overflow:hidden;
+}
+
+.gallery-wrapper{
+	position:relative;
+	top:30px;
+}
+
+footer{
+	background:url(images/header-topbar.gif);
+	border-top: 8px solid $faded-red;
+	padding-bottom:45px;
+}
+
+.footer__content{
+	margin-top:70px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.footer__content__block{
+	width:380px;
+}
+
+.footer__title{
+	font-family:"HelveticaNeueBold";
+	font-weight:bold;
+	font-size:14px;
+	color:#fff;
+	margin-bottom:24px;
+}
+
+.footer__text{
+	font-family:"Bitter";
+	font-weight:bold;
+	font-size:14px;
+	line-height:18px;
+	color:#adadad;
+	margin-top:24px;
+	
+	span{
+		display:block;
+		padding-right:42px;
+	}
+	
+	span.footer__text__border{
+		padding-bottom:18px;
+		border-bottom:1.5px solid rgba(255,255,255,8%);
+		margin-bottom:18px;
+	}
+}
+
+.footer__icons-social-network{
+	display:inline-block;
+	background: url(images/footer-sprites.png) no-repeat;
+}
+
+.footer__icons-facebook{
+	background-position: -84px -20px ;
+	width: 30px;
+	height: 31px;
+}
+.footer__icons-rss{
+	background-position: -27px -66px ;
+	width: 30px;
+	height: 31px;
+}
+.footer__icons-twitter{
+	background-position: -83px -65px ;
+	width: 30px;
+	height: 31px;
+}
+.footer__icons-dribbble{
+	background-position: -24px -18px ;
+	width: 30px;
+	height: 31px;
+}

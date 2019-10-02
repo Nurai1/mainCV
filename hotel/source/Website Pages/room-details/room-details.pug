@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Room details
+    meta(charset="utf-8")
+  body
+    include ./../../mixins/mixins.pug
+    +header(false)
+    .room-details__images
+      img.main-photo(src='./../../images/room-photo1-0.png')
+      img(src='./../../images/room-photo1-1.png')
+      img(src='./../../images/room-photo1-2.png')
+    .room-details-wrapper.page__wrapper
+      .room-details-wrapper__info
+        .room-details-wrapper__icons
+          span.__title Сведения о номере
+          include ./../../blocks/icon-text-list/icon-text-list.pug
+          div(class="icon-text-list__part _fire") 
+            span(class="icon-text-list__part__icon icon-text-list__part__icon_fire")
+            p(class="icon-text-list__part__text") 
+              span(class="text-bold") Уют<br>
+              span Номер оснащен камином
+        .room-details-wrapper__impression 
+          span.__title Впечатления от номера 
+          .impression__votes
+            svg.votes__rate
+              path(d="M 61,2 A50,50 0 0,0 61 118" fill='none' stroke="#FFBA9C" stroke-width="4")
+              svg 
+                path(d="M 63,4 A55,55 0 0,1 116 59" fill='none' stroke="#BC9CFF" stroke-width="8")
+                svg 
+                  path(d="M 118,61 A55,55 0 0,1 63 118" fill='none' stroke="#6FCF97" stroke-width="4")
+            ul.votes__list
+              li.__orange Великолепно
+              li.__green Хорошо
+              li.__purple Удовлетворительно
+              li.__black Разочарован
+        .room-details-wrapper__comments 
+          span.__title Отзывы посетителей номера
+          include ./../../blocks/comment/comment.pug
+          div(class="comment")
+            div(class="comment__author")
+              span(class="__photo __photo_Patricia")
+              p(class="__info")
+                span(class="__name") Патрисия Стеклышкова<br>
+                span(class="__time") Неделю назад
+            span(class="comment__like") 
+              include ./../../blocks/like-btn/like-btn.pug
+            p(class="comment__text") Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
+        .room-details-wrapper__rules 
+          span.__title.__title_rules Правила
+          +bullet-list()
+        .room-details-wrapper__rules-cancel 
+          span.__title Отмена
+          p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
+      .room-details-wrapper__card
+        include ./../../UI kit/cards/room-filtered/room-filtered.pug      
+    include ./../../UI kit/headers&footers/footer-widgetsNcopyright.pug

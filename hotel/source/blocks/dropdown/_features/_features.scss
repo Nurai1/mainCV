@@ -1,0 +1,28 @@
+.dropdown_features-wrapper{
+  width: 266px;
+}
+
+.btn-dropdown_features{
+  width:266px;
+  height:44px;
+}
+
+.dropdown_features{
+  width:266px;
+  height:119px;
+  padding-bottom: 7px;
+
+  .dropdown__plus-circle{
+    margin-left: 12.5px !important;
+  }
+
+  .dropdown__minus-circle{
+    margin-right: 12.5px !important;
+  }
+
+}
+
+.btn-dropdown_features__arrow{
+  position:relative;
+  top:-17px;
+}

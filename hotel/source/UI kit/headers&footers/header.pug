@@ -1,0 +1,21 @@
+mixin header(isRegistered, accauntName)
+  header.header
+    .header-wrapper
+      .header__logo
+        include ./../../blocks/logo/logo_color.pug
+        span.logo__text toxin
+      .header__navigation
+        ul.navigation-wrapper
+          li.hf__text.h__bold Home
+          li.hf__text About Us 
+          li.hf__text.h__text-arrow Services 
+            span.__arrow
+          li.hf__text Careers
+          li.hf__text News
+          li.hf__text Documentation
+        .accaunt-wrapper
+          if isRegistered
+            span.hf__text.accaunt-name= accauntName
+          else
+            a.btn.btn_purple-border(href="./../signIn/signIn.html") login
+            a.btn.btn_purple(href="./../registration/registration.html") register

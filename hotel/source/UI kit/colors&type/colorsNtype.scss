@@ -1,0 +1,119 @@
+@import './../../attributes.scss';
+
+.colorsNtype-wrapper{
+  margin: 0 (191/1440)*100% 0 (150/1440)*100%;
+}
+
+.colors-container{
+  width: 274px;
+  height: 610px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.color-wrapper{
+  width: 274px;
+  height: 70px;
+  display: inline-block;
+  position: relative;
+}
+
+.color-bg{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-text{
+  position: absolute;
+  top: 6px;
+  width: 159px;
+  height: 57px;
+  display: inline-block;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 29px;
+  color: $dark-shade;
+}
+
+.fontsSize-container{
+  width: 403px;
+  height: 321px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+}
+
+.fontsSize__part{
+  display: inline-block;
+  width: 403px;
+
+  .fontsSize__part__title{
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: normal;
+    text-align: right;
+    color: fade-out($dark-shade, .75);
+  }
+
+  ._titleH1{
+    width: 29px;
+    top: -29px;
+  }
+
+  ._titleH2{
+    width: 31px;
+    top: -22px;
+  }
+
+  ._titleH3{
+    width: 33px;
+  }
+
+  ._titleBody{
+    width: 37px;
+    top: -24px;
+  }
+
+  .fontsSize__part__text{
+    display: inline-block;
+    width: 336px;
+  }
+}
+
+.bigTitle{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $dark-shade;
+}
+
+.medTitle{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $dark-shade;
+}
+
+.smallTitle{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-shade;
+}

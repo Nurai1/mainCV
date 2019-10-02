@@ -1,0 +1,17 @@
+.signUp.cards-wrapper
+  span.cards__title Регистрация акаунта
+  input(id="" class="text-field__input cards__input" placeholder="Фамилия")
+  input(id="" class="text-field__input" placeholder="Имя")
+  include ./../../../blocks/radio-btns/radio-btns.pug
+  span.signUp__datebirth
+    +form-el-container('дата рождения')
+    input(id="" class="text-field__input" placeholder="ДД.ММ.ГГГГ")
+  +form-el-container('данные для входа в сервис')
+    input(id="" class="text-field__input cards__input" placeholder="Email")
+    input(id="" class="text-field__input" placeholder="Пароль")
+  include ./../../../blocks/toggle/toggle--disabled.pug
+  span.cards__accauntBtn
+    +btn_with-arrow("перейти к оплате")
+  span.cards__text Уже есть аккаунт на Toxin
+  div(class = 'btn btn_purple-border btn_cards') войти
+  

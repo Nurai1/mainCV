@@ -1,0 +1,103 @@
+.dropdown-wrapper{
+  display:inline-block;
+  position: relative;
+}
+
+.btn-dropdown{
+  display:inline-block;
+  background: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  color: fade-out($dark-shade,.25);
+  border: 1px solid fade-out($dark-shade,.5);
+  box-sizing: border-box;
+  padding: 12.56px 0 13.44px 15px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+
+  .btn-dropdown-text{
+    color: fade-out($dark-shade, .25);
+  }
+
+  .btn-dropdown__arrow{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    float:right;
+    cursor: pointer;
+    // Иконки под разные браузера
+    font-family: 'Material Icons';
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    @include material-icon('arrow_forward_ios');
+    transform: rotateZ(90deg);
+    margin-top: 2px;
+    margin-right: 17px;
+  }
+}
+
+.btn-dropdown_border-bottom{
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+}
+
+.btn-dropdown_border-bottom-off{
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
+}
+
+.dropdown{
+  display:none;
+  background: #FFFFFF;
+  border: 1px solid fade-out($dark-shade,.5);
+  border-top:0px;
+  box-sizing: border-box;
+  padding: 7px 7px 13px 15px;
+  box-shadow: 0px 10px 20px fade-out($dark-shade,.95);
+  text-transform: uppercase;
+  color:$dark-shade;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  z-index: 50000;
+
+  li{
+    margin-bottom:25px;
+
+    .dropdown__btns-wrapper{
+      display:inline-block;
+      float:right;
+      margin-top:-3px;
+
+      .dropdown__minus-circle, .dropdown__plus-circle{
+        display:inline-block;
+        width:30px;
+        height:30px;
+        padding: 2.5px 0px 0px 8.5px;
+        box-sizing: border-box;
+        border: 1px solid fade-out($dark-shade,.5);
+        border-radius: 15px;
+        font-size: 18px;
+        line-height: 22px;
+        color: fade-out($dark-shade,.5);
+        font-weight: normal;
+        cursor: pointer;
+        margin-left:14.5px;
+      }
+
+      .dropdown__minus-circle{
+        padding: 2px 0px 0px 10px;
+        margin-right:14.5px;
+        color: fade-out($dark-shade,.75);
+        border-color:fade-out($dark-shade, .75);
+      }
+
+      .dropdown__count{
+        width:30px;
+      }
+    }
+  }
+}

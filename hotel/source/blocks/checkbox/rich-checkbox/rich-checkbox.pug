@@ -1,0 +1,11 @@
+mixin rich-checkbox(checkboxText)
+  div(class="rich-checkbox")
+    p(class="checkbox__text")= checkboxText
+    div(class="checkbox__part")
+      input(type="checkbox" id="wide-coridor")
+      label(class="checkbox__btn rich-checkbox__btn" for="wide-coridor") Широкий коридор
+      span(class="rich-checkbox__part__text") Ширина коридоров в номере <br>не менее 91 см.
+    div(class="checkbox__part")
+      input(type="checkbox" id="invalid-helper")
+      label(class="checkbox__btn rich-checkbox__btn" for="invalid-helper") Помощник для инвалидов
+      span(class="rich-checkbox__part__text") На 1 этаже вас встретит специалист<br> и проводит до номера.
