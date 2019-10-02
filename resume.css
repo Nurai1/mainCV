@@ -1,0 +1,26 @@
+a{
+  color: rgb(100,100,100);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgba(100,100,100,0.7);
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul > li{
+  list-style-type: none;
+}
+
+ul > li:before{
+  content: "\2714\0020";
+}
+
+.portfolio{
+  width: 90vw;
+  margin: 0 auto;
+}
