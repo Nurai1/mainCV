@@ -1,0 +1,26 @@
+.input_sub-wrapper{
+  width:291px;
+  margin-right: -24px;
+}
+
+.text-field__input_sub{
+  width:267px;
+  display: inline-block;
+}
+
+.text-field_sub-arrow{
+  position: relative;
+  left:-33px;
+  top:7px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Material Icons';
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  position: relative;
+  @include material-icon('arrow_forward');
+  color: $purple;
+}

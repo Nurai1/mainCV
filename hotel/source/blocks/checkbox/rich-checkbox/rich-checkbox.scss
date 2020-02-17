@@ -1,0 +1,17 @@
+.rich-checkbox{
+  width:266px;
+  height:145px;
+  display: inline-block;
+}
+
+    label.rich-checkbox__btn{
+      font-weight: bold;
+      color: fade-out($dark-shade, .25);
+    }
+
+  .rich-checkbox__part__text{
+    display:inline-block;
+    margin-left:30px;
+    font-size: 12px;
+    line-height: 14px;
+  }

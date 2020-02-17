@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title Pug file
+  body
+    include ./../../mixins/mixins.pug
+    .headersNfooters
+      include ./../../blocks/logo/logo.pug
+      .header-logOut
+        +header(false)
+      .header-logIn
+        +header(true, "Ainur Sayapov")
+      .footer-info
+        include ./footer-widgetsNcopyright.pug
+      .footer-main
+        include ./footer-creative.pug  

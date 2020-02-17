@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic" rel="stylesheet"> <!--  font-family: 'PT Sans Caption', sans-serif;  -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <!--
+    Header part
+  -->
+  <header>
+      <div class="header--top">
+        <div class="header-wrapper">
+          <span class="header__city">Ваш город: <span>Санкт-Петербург</span>
+          </span>
+          <span class="header__street">Мучной переулок, 32134 Садовая улица название</span>
+          <ul class="header--top__menu">
+            <li>Главная</li>
+            <li>Акции</li>
+            <li>Прайс-лист</li>
+            <li>Условия работы</li>
+            <li>Гарантии</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header--bottom">
+          <div class="header--bottom__info">
+            <div class="header-wrapper">
+              <h1 class="header__title">Company</h1>
+              <input type="text" class="header__search" placeholder="Поиск">
+              <div class="header__connect">
+                <span class="header__phone">8 999 098 98 98</span>
+                <span class="header__workTime">Режим работы 09:00 - 21:00</span>
+              </div>
+              <button class="btn--general header__btn">Обратный звонок</button>
+            </div>
+          </div>
+          <div class="header--bottom__gadgets">
+            <div class="header-wrapper">
+              <ul class="gadgets__menu">
+                <li class="gadgets__menu_smartphone">Смартфоны</li>
+                <li class="gadgets__menu_tablet">Планшеты</li>
+                <li class="gadgets__menu_laptop">Ноутбуки</li>
+                <li class="gadgets__menu_imac">Моноблоки</li>
+                <li class="gadgets__menu_computer">Компьютеры</li>
+                <li class="gadgets__menu_tv">Телевизоры</li>
+                <li class="gadgets__menu_another">Еще устройства</li>
+              </ul>
+            </div>
+          </div>
+    </div>
+  </header>
+  <main>
+    <!--
+      intro part
+    -->
+    <div class="intro">
+      <div class="intro-background">
+        <div class="main-wrapper">
+          <div class="intro__text">
+            <span class="intro__title">Сервисный центр умных устройств в Санкт-Петербурге</span>
+            <span class="intro__subtitle">Подзаголовок будет здесь поменьше и покороче, будет нести очень много смысла очень тут</span>
+          </div>
+          <section class="intro__coupon">
+            <div class="coupon__main">
+              <div class="coupon__text">
+                <span class="coupon__title">Скидки 15% на все виды ремонта до конца июля</span>
+                <span class="coupon__subtitle">Текст акции может быть здесь под заголовком и над красивой большой кнопкой</span>
+              </div>
+              <input type="text" class="coupon__clientName" placeholder="Ваше имя">
+              <input type="tel" class="coupon__clientPhone"placeholder="+7(___)-___-__-__">
+              <button class="coupon__btn btn--general">Оставить заявку</button>
+              <input type="checkbox" id="sms">
+              <label class="coupon__checkbox" for="sms">Связаться с Вами по SMS?</label>
+              <div class="coupon__subtext">Нажимая кнопку “Оставить заявку”, я даю согласие на обработку персональных данных</div>
+            </div>
+            <div class="coupon__images">
+              <img src="images/coupon/Ellipse.png" class="coupon__blue-image">
+              <img src="images/coupon/laptop.png" class="coupon__laptop-image">
+              <img src="images/coupon/phone.png" class="coupon__phone-image">
+              <img src="images/coupon/headphones.png" class="coupon__headphones-image">
+            </div>
+            <div class="coupon__nav">
+              <svg class="coupon__nav-rect">
+                <rect fill="#4353FF" x="0" y="0" width="62" height="3"/>
+                <rect fill="#F4F4F4" x="75" y="0" width="62" height="3"/>
+                <rect fill="#F4F4F4" x="150" y="0" width="62" height="3"/>
+                <rect fill="#F4F4F4" x="225" y="0" width="62" height="3"/>
+              </svg>
+              <div class="coupon__nav-arrows">
+                <span class="coupon__arrow coupon__arrow_left"><img src="images/arrow-right-gray.png" ></span>
+                <span class="coupon__arrow"><img src="images/arrow-right-gray.png"></span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!--
+      Organization symbols
+    -->
+    <div class="computer-symbols">
+        <div class="symbols-wrapper">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/windows.png" alt="computer symbols">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/windows.png" alt="computer symbols">
+          <img src="images/computer-symbols/xiaomi.png" alt="computer symbols">
+          <img src="images/computer-symbols/huawei.png" alt="computer symbols">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/windows.png" alt="computer symbols">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/android.png" alt="computer symbols">
+          <img src="images/computer-symbols/windows.png" alt="computer symbols">
+          <img src="images/computer-symbols/xiaomi.png" alt="computer symbols">
+          <img src="images/computer-symbols/huawei.png" alt="computer symbols">
+          <img src="images/computer-symbols/windows.png" alt="computer symbols">
+          <img src="images/computer-symbols/huawei.png" alt="computer symbols">
+          <img src="images/computer-symbols/windows.png" alt="computer symbols">
+        </div>
+    </div>
+    <!--
+      models part
+    -->
+    <div class="models">
+        <div class="main-wrapper models-wrapper">
+          <div class="main-title">Популярные модели</div>
+          <div class="models__products">
+            <div class="models__product">
+              <span class="product__discount">Скидка 15%</span>
+              <div class="product__image product__image_samsung">
+                <img src="images/models/samsung.png" alt="">
+              </div>
+              <div class="product__text">
+                <div class="product__title">Samsung NP305U1A</div>
+                <span class="product__subtitle">Ремонт от 30 мин.</span>
+                <span class="product__price">от 750 руб.</span>
+              </div>
+              <button class="btn--general product__btn">Оставить заявку</button>
+            </div>
+            <div class="models__product">
+              <div class="product__image product__image_xiaomi">
+                <img src="images/models/xiaomi.png" alt="">
+              </div>
+              <div class="product__text">
+                <div class="product__title">Xiaomi V3-571G-532...</div>
+                <span class="product__subtitle">Ремонт от 30 мин.</span>
+                <span class="product__price">от 750 руб.</span>
+              </div>
+              <button class="btn--general product__btn">Оставить заявку</button>
+            </div>
+            <div class="models__product">
+              <span class="product__discount">Скидка 15%</span>
+              <div class="product__image product__image_iphone">
+                <img src="images/models/iphone.png" alt="">
+              </div>
+              <div class="product__text">
+                <div class="product__title">Iphone 6</div>
+                <span class="product__subtitle">Ремонт от 30 мин.</span>
+                <span class="product__price">от 750 руб.</span>
+              </div>
+              <button class="btn--general product__btn">Оставить заявку</button>
+            </div>
+            <div class="models__product">
+              <div class="product__image product__image_lg">
+                <img src="images/models/lg.png" alt="">
+              </div>
+              <div class="product__text">
+                <div class="product__title">LG 17-ab204ng</div>
+                <span class="product__subtitle">Ремонт от 30 мин.</span>
+                <span class="product__price">от 750 руб.</span>
+              </div>
+              <button class="btn--general product__btn">Оставить заявку</button>
+            </div>
+            <div class="models__product">
+              <div class="product__image product__image_asus">
+                <img src="images/models/asus.png" alt="">
+              </div>
+              <div class="product__text">
+                <div class="product__title">Asus pro P53SJ-SO0...</div>
+                <span class="product__subtitle">Ремонт от 30 мин.</span>
+                <span class="product__price">от 750 руб.</span>
+              </div>
+              <button class="btn--general product__btn">Оставить заявку</button>
+            </div>
+            <div class="product__arrow product__arrow_left">
+              <img src="images/arrow-left-white.png" alt="">
+            </div>
+            <div class="product__arrow product__arrow_right">
+              <img src="images/arrow-left-white.png" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--
+      repair service part
+    -->
+    <div class="repair-service">
+        <div class="main-wrapper repair-service-wrapper">
+          <div class="main-title">Ремонтируем</div>
+          <div class="repair-service__container">
+            <div class="repair-service__block repair-service__block_hover">
+              <div class="repair-service__block_blue">
+                <img src="images/repair-service/smartphones.png" alt="">
+                <div class="repair-service__text">
+                  <div class="text__title">Смартфоны</div>
+                  <p>Более 300 брендов, срочный ремонт от 30 минут.</p>
+                  </div>
+              </div>
+              <div class="block_blue-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+            </div>
+            <div class="repair-service__block repair-service__block_techno">
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/tablet.png" alt=""><span class="techno__title">Планшеты</span></div>
+              </div>
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/laptop.png" alt=""><span class="techno__title">Ноутбуки</span></div>
+              </div>
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/tv.png" alt=""><span class="techno__title">Телевизоры</span></div>
+              </div>
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/camera.png" alt=""><span class="techno__title">Фотоаппараты</span></div>
+              </div>
+            </div>
+            <div class="repair-service__block repair-service__block_techno">
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/imac.png" alt=""><span class="techno__title">Моноблоки</span></div>
+              </div>
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/monitor.png" alt=""><span class="techno__title">Мониторы</span></div>
+              </div>
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="" alt=""><span class="techno__title">Кофемашины</span></div>
+              </div>
+              <div class="techno__blocks">
+                <div class="techno__image-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+                <div class="techno__image"><img src="images/repair-service/projector.png" alt=""><span class="techno__title">Проекторы</span></div>
+              </div>
+            </div>
+            <div class="repair-service__block repair-service__block_hover">
+              <div class="repair-service__block_blue">
+                <div class="repair-service__text">
+                  <div class="text__title">Компьютеры</div>
+                  <p>Срочный ремонт неисправностей любой сложности</p>
+                </div>
+              </div>
+              <div class="block_blue-wrapper-for-hover"><img class="repair-service__loupe" src="images/repair-service/loupe.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--
+      calculation part using section styles(will find in main styles)
+    -->
+    <div class="calculation section">
+      <div class="calculation-background section-background">
+        <div class="calculation-wrapper">
+          <div class="calculation__title main-title">Рассчитать стоимость ремонта</div>
+          <span class="calculation__subtitle main-subtitle">Узнайте стоимость ремонта в три клика!</span>
+          <div class="calculation__buttons">
+            <div class="dropdown dropdown_device">
+              <div class="dropdown__select">
+                <span class="select__text">Тип устройства</span>
+                <span class="select-arrow">&#9660</span>
+              </div>
+              <div class="dropdown__options">
+                <span class="dropdown__option">Смартфон</span>
+                <span class="dropdown__option">Ноутбук</span>
+                <span class="dropdown__option">Моноблок</span>
+                <span class="dropdown__option">Компьютер</span>
+              </div>
+            </div>
+            <div class="dropdown dropdown_service">
+              <div class="dropdown__select"><span class="select__text">Поломка</span>
+                <span class="select-arrow">&#9660</span>
+              </div>
+              <div class="dropdown__options">
+                <span class="dropdown__option">Корпус</span>
+                <span class="dropdown__option">Дисплей</span>
+                <span class="dropdown__option">Батарея</span>
+                <span class="dropdown__option">Плата</span>
+              </div>
+            </div>
+            <div class="calc__btn btn--general">Рассчитать стоимость</div>
+            <div class="calc-gif"><img class="" src="images/calculation.gif" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      video part
+    -->
+    <div class="video">
+      <div class="video-wrapper">
+          <div class="video__text">
+            <div class="main-title video__title">Работаем лучше всех. Только посмотрите!</div>
+            <span class="main-subtitle video__subtitle">Наш сервисный центр в Санкт-Петербурге занимаетсяяя
+              проведением качественного также также тако ремонта, а также</span>
+            <button class="btn--general">Оставить заявку</button>
+          </div>
+          <div class="video__content">
+            <img src="images/video-image.png" alt="">
+            <img class="play-btn" src="images/play-btn.png" alt="">
+          </div>
+      </div>
+    </div>
+    <!--
+      cards part
+    -->
+    <div class="cards">
+        <div class="main-title">Уже 15 лет делаем добро</div>
+        <div class="main-wrapper cards-wrapper">
+          <div class="card">
+            <div class="card__ico"><img src="images/cards/clock.png" alt=""></div>
+            <p class="main-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+            <svg>
+              <rect fill="#4353FF" x="0" y="0" width="69" height="2"></rect>
+            </svg>
+          </div>
+          <div class="card">
+            <div class="card__ico"><img src="images/cards/truck.png" alt=""></div>
+            <p class="main-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+            <svg>
+              <rect fill="#4353FF" x="0" y="0" width="69" height="2"></rect>
+            </svg>
+          </div>
+          <div class="card">
+            <div class="card__ico"><img src="images/cards/wallet.png" alt=""></div>
+            <p class="main-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+            <svg>
+              <rect fill="#4353FF" x="0" y="0" width="69" height="2"></rect>
+            </svg>
+          </div>
+          <div class="card">
+            <div class="card__ico"><img src="images/cards/clock.png" alt=""></div>
+            <p class="main-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+            <svg>
+              <rect fill="#4353FF" x="0" y="0" width="69" height="2"></rect>
+            </svg>
+          </div>
+          <div class="card">
+            <div class="card__ico"><img src="images/cards/truck.png" alt=""></div>
+            <p class="main-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+            <svg>
+              <rect fill="#4353FF" x="0" y="0" width="69" height="2"></rect>
+            </svg>
+          </div>
+          <div class="card">
+            <div class="card__ico"><img src="images/cards/wallet.png" alt=""></div>
+            <p class="main-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+            <svg>
+              <rect fill="#4353FF" x="0" y="0" width="69" height="2"></rect>
+            </svg>
+          </div>
+        </div>
+    </div>
+    <!--
+      description part
+    -->
+    <div class="decscription">
+      <div class="main-wrapper">
+        <div class="main-title desc__title">Самый лучший в мире сервисный центр</div>
+        <div class="desc-wrapper">
+          <p class="desc__text main-subtitle">
+            Ремонт техники всегда проходит по слаженной схеме. Потенциальный клиент изучает предоставленную
+            информацию и убеждается в том, что сотрудничество обещает быть успешным. Затем проводится бесплатная
+             диагностика, после которой становится возможным быстрый ремонт. В обязательном порядке применяются
+              качественные запчасти, которые придают оптимальную надежность используемой продукции. Такая слаженная
+               схема гарантирует то, что сервисный центр может оказать помощь в устранении любых неисправностей,
+               имеющих отношение к планшетам, компьютерам или другой технике. Мастера нашего сервисного центра
+               проводят обслуживание и ремонт смартфонов, планшетов, ноутбуков, мобильной техники, персональных
+               компьютеров независимо от бренда. В нашу компанию часто обращаются клиенты, которым требуется ремонт
+                компьютерной техники. Мы предлагаем не только проведение ремонта, но и огромный выбор оригинальных
+                запчастей. Благодаря наличию собственного склада есть возможность выбора наиболее редкой детали для
+                замены по доступной стоимости. Мастера нашего сервисного центра проводят обслуживание и ремонт
+                 смартфонов, планшетов, ноутбуков, мобильной техники, персональных компьютеров независимо от бренда.
+          </p>
+            <div class="desc__image-wrapper">
+              <img class="desc__image" src="images/description/desc-image1.png" alt="">
+            <img class="desc__image" src="images/description/desc-image2.png" alt="">
+            <img class="desc__image" src="images/description/desc-image3.png" alt="">
+          </div>
+          <div class="desc__block">
+              <div class="main-wrapper">
+                <div class="main-title desc__block__title">Работаем лучше всех. Только посмотрите!</div>
+                <p class="main-subtitle desc__block__subtitle">Наш сервисный центр в Санкт-Петербурге занимается
+                   проведением качественного ремонта, а также восстановлением программного обеспечения планшетов
+                    и компьютеров, ноутбуков и нетбуков, айфонов и остальных переносных устройств.
+                </p>
+                <button class="btn--general desc__block__btn">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      scheme part
+    -->
+    <div class="scheme">
+      <div class="scheme-wrapper">
+        <div class="main-title">Схема работы</div>
+          <div class="scheme__container">
+            <div class="scheme__container__block">
+              <div class="scheme__ico"><img src="images/cards/wallet.png" alt=""></div>
+              <div class="scheme__text">
+                <span class="scheme__text__title">Шаг 1.</span>
+                <span>Вы оставляете заявку и наш менеджер связывается с Вами</span>
+              </div>
+              <button class="btn--general">Оставить заявку</button>
+            </div>
+            <div class="scheme__container__block">
+              <div class="scheme__ico"><img src="images/cards/truck.png" alt=""></div>
+              <div class="scheme__text">
+                <span class="scheme__text__title">Шаг 2.</span>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing</span>
+              </div>
+            </div>
+            <div class="scheme__container__block">
+              <div class="scheme__ico"><img src="images/cards/clock.png" alt=""></div>
+              <div class="scheme__text">
+                <span class="scheme__text__title">Шаг 3.</span>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing</span>
+              </div>
+            </div>
+            <div class="scheme__container__block">
+              <div class="scheme__ico"><img src="images/cards/wallet.png" alt=""></div>
+              <div class="scheme__text">
+                <span class="scheme__text__title">Шаг 4.</span>
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="scheme__photos">
+          <img src="images/scheme/scheme-photo1.png" alt="">
+          <img src="images/scheme/scheme-photo2.png" alt="">
+          <img src="images/scheme/scheme-photo3.png" alt="">
+          <img src="images/scheme/scheme-photo3.png" alt="">
+          <img src="images/scheme/scheme-photo1.png" alt="">
+          <img src="images/scheme/scheme-photo2.png" alt="">
+      </div>
+    </div>
+    <!--
+      solution part
+    -->
+    <div class="solution section">
+      <div class="solution-background section-background">
+        <div class="solution-wrapper">
+          <div class="main-title">Проблемы с устройством?</div>
+          <span class="main-subtitle solution__subtitle">Оставьте заявку и мы свяжемся с вами</span>
+
+          <!--
+              Схожий блок. Классы скопированы с блока купона.
+            -->
+
+          <input type="text" class="coupon__clientName solution__clientName" placeholder="Ваше имя">
+          <input type="tel" class="coupon__clientPhone solution__clientPhone"placeholder="+7(___)-___-__-__">
+          <button class="coupon__btn btn--general">Оставить заявку</button>
+          <input type="checkbox" id="sms">
+          <label class="coupon__checkbox solution__checkbox" for="sms">Связаться с Вами по SMS?</label>
+          <div class="coupon__subtext solution__subtext">
+            Нажимая кнопку “Оставить заявку”, я даю согласие на обработку персональных данных
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      final description part
+    -->
+    <div class="finalDescription">
+      <div class="main-title">Самый лучший в мире сервисный центр</div>
+      <div class="finalDescription__images">
+        <img class="finalDesc__ellipse" src="images/finalDescription/ellipse.png" alt="">
+        <img class="finalDesc__laptop" src="images/finalDescription/laptop.png" alt="">
+        <img class="finalDesc__smartphones" src="images/finalDescription/smartphones.png" alt="">
+      </div>
+      <p class="finalDescription__text main-subtitle">
+        Ремонт техники всегда проходит по слаженной схеме. Потенциальный клиент изучает предоставленную
+         информацию и убеждается в том, что сотрудничество обещает быть успешным. Затем проводится бесплатная
+         диагностика, после которой становится возможным быстрый ремонт. В обязательном порядке применяются
+          качественные запчасти, которые придают оптимальную надежность используемой продукции. Такая
+           слаженная схема гарантирует то, что сервисный центр может оказать помощь в устранении любых
+           неисправностей, имеющих отношение к планшетам, компьютерам или другой технике. Мастера нашего
+           сервисного центра проводят обслуживание и ремонт смартфонов, планшетов, ноутбуков, мобильной
+           техники, персональных компьютеров независимо от бренда.
+      </p>
+    </div>
+    <!--
+      organiaztion symbols again
+    -->
+    <div class="computer-symbols">
+      <div class="symbols-wrapper">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/windows.png" alt="computer symbols">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/windows.png" alt="computer symbols">
+        <img src="images/computer-symbols/xiaomi.png" alt="computer symbols">
+        <img src="images/computer-symbols/huawei.png" alt="computer symbols">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/windows.png" alt="computer symbols">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/android.png" alt="computer symbols">
+        <img src="images/computer-symbols/windows.png" alt="computer symbols">
+        <img src="images/computer-symbols/xiaomi.png" alt="computer symbols">
+        <img src="images/computer-symbols/huawei.png" alt="computer symbols">
+        <img src="images/computer-symbols/windows.png" alt="computer symbols">
+        <img src="images/computer-symbols/huawei.png" alt="computer symbols">
+        <img src="images/computer-symbols/windows.png" alt="computer symbols">
+      </div>
+    </div>
+  </main>
+  <!--
+    footer part
+  -->
+  <footer>
+
+    <!--------------
+        Футер и хэдер один в один, отличаются только цветом верхней шапки. Классы скопированы.
+                                                                                      -------------->
+
+    <div class="header--top footer--top">
+      <div class="header-wrapper">
+        <span class="header__city">Ваш город: <span>Санкт-Петербург</span>
+        </span>
+        <span class="header__street">Мучной переулок, 32134 Садовая улица название</span>
+        <ul class="header--top__menu">
+          <li>Главная</li>
+          <li>Акции</li>
+          <li>Прайс-лист</li>
+          <li>Условия работы</li>
+          <li>Гарантии</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+    </div>
+    <div class="header--bottom">
+        <div class="header--bottom__info">
+          <div class="header-wrapper">
+            <h1 class="header__title">Company</h1>
+            <input type="text" class="header__search" placeholder="Поиск">
+            <div class="header__connect">
+              <span class="header__phone">8 999 098 98 98</span>
+              <span class="header__workTime">Режим работы 09:00 - 21:00</span>
+            </div>
+            <button class="btn--general header__btn">Обратный звонок</button>
+          </div>
+        </div>
+        <div class="header--bottom__gadgets">
+          <div class="header-wrapper">
+            <ul class="gadgets__menu">
+              <li class="gadgets__menu_smartphone">Смартфоны</li>
+              <li class="gadgets__menu_tablet">Планшеты</li>
+              <li class="gadgets__menu_laptop">Ноутбуки</li>
+              <li class="gadgets__menu_imac">Моноблоки</li>
+              <li class="gadgets__menu_computer">Компьютеры</li>
+              <li class="gadgets__menu_tv">Телевизоры</li>
+              <li class="gadgets__menu_another">Еще устройства</li>
+            </ul>
+          </div>
+        </div>
+  </div>
+  <div class="footer--bottom">
+    <div class="main-wrapper footer--bottom-wrapper">
+      <span>Компания © 2019 Все права защищены</span>
+      <span class="footer--bottom__underlined-text">Политика конфиденциальности</span>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

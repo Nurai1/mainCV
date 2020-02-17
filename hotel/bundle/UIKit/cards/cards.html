@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cards</title>
+  <link href="cards.css" rel="stylesheet"></head>
+  <body>
+    <div class="cards"><svg class="logo" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
+<path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
+<path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
+</svg>
+      <div class="page__wrapper cards__wrapper">
+        <div class="cards__wrapper__first-col">
+          <div class="room-filter cards-wrapper"><span class="cards__title">Найдём номера под ваши пожелания</span>
+<div class="date-dropdown"> 
+  <div class="date-dropdown__part date-dropdown__part-from">
+    <label for="dateFrom">прибытие</label><span class="date-dropdown__arrow"></span>
+    <input class="dateFrom" id="dateFrom" type="text" placeholder="ДД.ММ.ГГГГ">
+  </div>
+  <div class="date-dropdown__part">
+    <label for="dateTo">выезд</label><span class="date-dropdown__arrow"></span>
+    <input class="dateTo" id="dateTo" type="text" placeholder="ДД.ММ.ГГГГ">
+  </div>
+  <div class="date-dropdown__calendar date-dropdown__calendar_abs-pos"></div>
+</div><span class="room-filter__dropdown">
+                  <div class="form-el-container"><span class="form-el-container__title">гости</span><span class="form-el-container__additional-word"></span><br>
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">Сколько гостей</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a>
+  <ul class="dropdown dropdown_guests dropdown_guests_for-site"> 
+    <li>взрослые 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle adults-minus">-</span><span class="dropdown__count adults-count">0</span><span class="dropdown__plus-circle adults-plus">+</span></div>
+    </li>
+    <li>дети 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle kids-minus">-</span><span class="dropdown__count kids-count">0</span><span class="dropdown__plus-circle kids-plus">+</span></div>
+    </li>
+    <li>младенцы
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle babies-minus">-</span><span class="dropdown__count babies-count">0</span><span class="dropdown__plus-circle babies-plus">+</span></div>
+    </li>
+    <li> 
+      <div class="dropdown_guests__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
+    </li>
+  </ul>
+</div>
+                  </div></span><span class="cards__accauntBtn">
+                  <div class="btn btn_with-arrow"> <span>подобрать номер</span><svg class = 'arrow-at-btn' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="white"/>
+</svg>
+                  </div></span>
+          </div>
+          <div class="signUp cards-wrapper"><span class="cards__title">Регистрация акаунта</span>
+            <input class="text-field__input cards__input" id="" placeholder="Фамилия">
+            <input class="text-field__input" id="" placeholder="Имя">
+<div class="radio-btns">
+  <div class="radio-btns-wrapper">
+    <input type="radio" id="man" name="radio" checked>
+    <label class="radio-btns__btn" for="man">Мужчина</label>
+  </div>
+  <div class="radio-btns-wrapper">
+    <input type="radio" id="woman" name="radio">
+    <label class="radio-btns__btn" for="woman">Женщина</label>
+  </div>
+</div><span class="signUp__datebirth">
+                  <div class="form-el-container"><span class="form-el-container__title">дата рождения</span><span class="form-el-container__additional-word"></span><br>
+                  </div>
+              <input class="text-field__input" id="" placeholder="ДД.ММ.ГГГГ"></span>
+                <div class="form-el-container"><span class="form-el-container__title">данные для входа в сервис</span><span class="form-el-container__additional-word"></span><br>
+                  <input class="text-field__input cards__input" id="" placeholder="Email">
+                  <input class="text-field__input" id="" placeholder="Пароль">
+                </div>
+<div class="toggle toggle--disabled">
+  <input type="checkbox" id="specialOffer">
+  <label class="toggle__btn" for="specialOffer">Получать спецпредложения</label>
+</div><span class="cards__accauntBtn">
+                  <div class="btn btn_with-arrow"> <span>перейти к оплате</span><svg class = 'arrow-at-btn' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="white"/>
+</svg>
+                  </div></span><span class="cards__text">Уже есть аккаунт на Toxin</span>
+            <div class="btn btn_purple-border btn_cards">войти</div>
+          </div>
+        </div>
+        <div class="cards__wrapper__second-col">
+          <div class="room-filtered cards-wrapper"><span class="room__number">№888</span><span class="room__feature">люкс</span><span class="room__text"><strong>9990₽</strong> в сутки</span>
+<div class="date-dropdown"> 
+  <div class="date-dropdown__part date-dropdown__part-from">
+    <label for="dateFrom">прибытие</label><span class="date-dropdown__arrow"></span>
+    <input class="dateFrom" id="dateFrom" type="text" placeholder="ДД.ММ.ГГГГ">
+  </div>
+  <div class="date-dropdown__part">
+    <label for="dateTo">выезд</label><span class="date-dropdown__arrow"></span>
+    <input class="dateTo" id="dateTo" type="text" placeholder="ДД.ММ.ГГГГ">
+  </div>
+  <div class="date-dropdown__calendar date-dropdown__calendar_abs-pos"></div>
+</div><span class="room-filter__dropdown">
+                  <div class="form-el-container"><span class="form-el-container__title">гости</span><span class="form-el-container__additional-word"></span><br>
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">Сколько гостей</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a>
+  <ul class="dropdown dropdown_guests dropdown_guests_for-site"> 
+    <li>взрослые 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle adults-minus">-</span><span class="dropdown__count adults-count">0</span><span class="dropdown__plus-circle adults-plus">+</span></div>
+    </li>
+    <li>дети 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle kids-minus">-</span><span class="dropdown__count kids-count">0</span><span class="dropdown__plus-circle kids-plus">+</span></div>
+    </li>
+    <li>младенцы
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle babies-minus">-</span><span class="dropdown__count babies-count">0</span><span class="dropdown__plus-circle babies-plus">+</span></div>
+    </li>
+    <li> 
+      <div class="dropdown_guests__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
+    </li>
+  </ul>
+</div>
+                  </div></span>
+            <div class="room-filtered__info"><span class="room-filtered__info__left"> <span>9990₽ x 4 суток <br></span><span>Сбор за услуги: скидка 2 179₽ <br></span><span>Сбор за дополнительные услуги </span></span><span class="room-filtered__info__i"><span>i</span><span>i</span></span><span class="room-filtered__info__right"> <span>39960₽</span><span>0₽</span><span>300₽</span></span><span class="room-filtered__info__sum">Итого <span class="__points"></span> 38 081₽</span></div><span class="cards__accauntBtn">
+                  <div class="btn btn_with-arrow"> <span>забронировать</span><svg class = 'arrow-at-btn' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="white"/>
+</svg>
+                  </div></span>
+          </div>
+          <div class="signIn cards-wrapper"><span class="cards__title">Войти</span>
+            <input class="text-field__input cards__input " id="" placeholder="Фамилия">
+            <input class="text-field__input " id="" placeholder="Имя"><span class="cards__accauntBtn">
+                  <div class="btn btn_with-arrow"> <span>войти</span><svg class = 'arrow-at-btn' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="white"/>
+</svg>
+                  </div></span><span class="cards__text">Нет аккаунта на Toxin?</span>
+            <div class="btn btn_purple-border btn_cards">Создать</div>
+          </div>
+        </div>
+        <div class="cards__wrapper__third-col">
+          <div class="date-dropdown__calendar" id="cards__calendar"></div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo1.png"><span class="__arrow __arrow_left"></span><span class="__arrow __arrow_right"></span><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№888</span><span class="room__feature">люкс</span><span class="room__text"> <strong>9990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                      </div><span class="room__text"> <strong>145</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo2.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№840</span><span class="room__text"> <strong>9990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>65</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="cards.js"></script></body>
+</html>

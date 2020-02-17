@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/css/style.css">
+  <!--  Для браузеров IE < 9  -->
+  <!--[if lte IE9]>
+  <div style="background-color: rgb(253,78,78); color: #fff; width: 100%; height: 100%; margin: 0; padding: 50px; box-sizing: border-box; position: fixed; top: 0; bottom: 0;left: 0; right: 0; font-size: 26px; line-height: 150%;">
+     <p style="width: 80%;  margin: auto; text-align: center;"> Приносим свои извинения. Данный сайт не может корректно работать в браузере "Internet Explorer" ниже 10(-й) версии.
+          Пожалуйста, используйте другой более современный браузер или обновите ваш "Internet Explorer" до 10-11(-й) версии.</p>
+  </div>
+  <script>
+       if(window.stop !== undefined) {
+         window.stop();
+       } else if (document.execCommand !== undefined) { // для IE
+         document.execCommand("Stop", false);
+       }
+   </script>
+  <![endif]-->
+</head>
+<body>
+  <!--  HEADER  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo align-left">
+        <img src="images/logo.png" alt="Giant Template">
+        <span>Giant</span>
+      </div>
+      <nav class="navigation align-right">
+        <a href="#home" class="link nav__link">Home</a>
+        <a href="#advantages" class="link nav__link">Features</a>
+        <a href="#packages" class="link nav__link">Pricing</a>
+        <a href="#download" class="link link--white-button nav__link">Download Now</a>
+      </nav>
+      <div class="bar align-right" onclick = "toggleFunc()">
+        <nav class="navigation--bar">
+          <a href="#home" class="link nav--bar__link">Home</a>
+          <a href="#advantages" class="link nav--bar__link">Features</a>
+          <a href="#packages" class="link nav--bar__link">Pricing</a>
+          <a href="#download" class="link nav--bar__link">Download</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--  END HEADER  -->
+  <main class="main">
+    <!--  INTRO SECTION  -->
+    <section class="intro-wrapper" id="home">
+      <div class="wrapper">
+        <div class="intro">
+          <h1 class="intro__title">
+            A Powerful & Unique App Landing Template
+          </h1>
+          <p class="intro__text">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <ul class="intro__list">
+            <li>Unlimited colors: banner with images, slider or video</li>
+            <li>Fully Responsive and powered by HTML5 and CSS3</li>
+            <li>Very easy to customize : set up in minutes</li>
+          </ul>
+          <a href="#advantages" class="link link--white-button intro__link">Start Exploring Us</a>
+        </div>
+      </div>
+      <div class="intro__image">
+        <img class="intro__screen intro__screen1" src="./images/intro__screen1.png" alt="Manage with Giant app">
+        <img class="intro__screen intro__screen2" src="./images/intro__screen2.png" alt="Share with Giant app">
+        <img class="intro__screen intro__screen3" src="./images/intro__screen3.png" alt="Keep contact with Giant app">
+      </div>
+    </section>
+    <!--  END INTRO  -->
+    <!--  ADVANTAGES SECTION  -->
+    <section class="advantages-wrapper wrapper" id="advantages">
+        <div class="advantages">
+          <div class="advantage">
+            <span class="advantage__icon align-left fas fa-tags"></span>
+            <span class="advantage__title">Sell any product online</span>
+            <p class="advantage__text">Over 92% of computers are infected with
+              Adware and spyware. Such software is rarely accompanied by uninstall
+               utility and even when it is it almost always leaves broken Windows
+               Registry keys behind it. Even if you have an anti-spyware tool your
+                Windows Registry might be broken – developers of those tools are
+                focused on removing Adware and spyware functionality, not every
+                trace of software itself.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon align-left fas fa-cog"></span>
+            <span class="advantage__title">Very easy to customize</span>
+            <p class="advantage__text">Many of us are so used to working on a
+               computer desktop that when it comes time to purchase a new computer,
+               we don’t consider other options.
+                1. Mobility
+                You might be used to pulling up a chair to your computer, but it makes much
+                more sense to pull your computer up to your chair. Laptops can certainly be
+                used at your desk, but you also have the option of bringing them to the spot
+                where you’re most comfortable.
+                2. Better Displays
+                The size and quality of computer notebook displays has improved so dramatically
+                that there’s little difference between laptops and a computer desktop.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon align-left fas fa-paint-brush"></span>
+            <span class="advantage__title">Unlimited colors</span>
+            <p class="advantage__text">Audio player software is used to play back
+              sound recordings in one of the many formats available for computers
+              today. It can also play back music CDs. There is audio player
+              software that is native to the computer’s operating system
+              (Windows, Macintosh, and Linux) and there are web-based audio players.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon align-left fas fa-fire-extinguisher"></span>
+            <span class="advantage__title">Responsive, HTML5, CSS3</span>
+            <p class="advantage__text">Computers have become ubiquitous in almost
+               every facet of our lives. At work, desk jockeys spend hours in front
+               of their desktops, while delivery people scan bar codes with
+               handhelds and workers in the field stay in touch with the central
+               office via their notebooks.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon align-left fas fa-file-alt"></span>
+            <span class="advantage__title">Designed to convert</span>
+            <p class="advantage__text">If you are looking for a new way to promote
+               your business that won’t cost you more money, maybe printing is one
+                of the options you won’t resist. Printing is a widely use process
+                 in making printed materials that are used for advertising.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon align-left fas fa-futbol"></span>
+            <span class="advantage__title">With no boundaries</span>
+            <p class="advantage__text">Now, if you are interested in being the
+               best player, getting really good money and knowing some tricks
+               and advices of what to do in a live tournament games, here is
+               the best place to learn them.
+                1) Try not to get drunk
+                2) Is it important where I sit? Yes it is, in a tournament try not to sit
+                next to the dealer, take a place in where you will feel that you are in
+                front of the dealer to have the feeling that he is giving you a game.
+                3) Make your self comfortable while playing
+                4) Do the most important thing in the brake.
+                5) Also your words and mimic are important during the game.
+            </p>
+          </div>
+        </div>
+    </section>
+    <!--  END ADVANTAGES  -->
+    <!--  DESCRIPTION SECTION  -->
+    <section class="description-wrapper wrapper">
+        <div class="description__screen"></div>
+        <div class="description">
+          <h2 class="title description__title">We don’t leave you stranded</h2>
+          <p class="subtitle description__subtitle">Everyone’s reasons for learning user
+            interface design are different. If you’re already a developer, or a
+            PM, or a UX designer, why develop this totally separate skill?</p>
+          <p class="description__text">Everyone’s reasons for learning user
+             interface design are different. If you’re already a developer, or
+              a PM, or a UX designer, why develop this totally separate skill?
+              If you’re already a developer, or a PM, or a UX designer.</p>
+          <ul class="description__list">
+            <li>Unlimited colors: banner with images, slider or video</li>
+            <li>Fully Responsive and powered by HTML5 and CSS3</li>
+            <li>Very easy to customize : set up in minutes</li>
+          </ul>
+        </div>
+    </section>
+    <!--  END DESCRIPTION  -->
+    <!--  SCREENSHOTS SECTION  -->
+    <section class="screenshots-wrapper">
+      <div class="wrapper">
+        <h2 class="title title-center-align screenshots__title">Take a look at our screenshots</h2>
+        <p class="subtitle title-center-align screenshots__subtitle">
+          Everyone’s reasons for learning user interface design are different.
+          If you’re already a developer, or a PM, or a UX designer, why develop
+          this totally separate skill?
+        </p>
+        <div class="screenshots">
+          <div class="screenshot screenshot-1"></div>
+          <div class="screenshot screenshot-2"></div>
+          <div class="screenshot screenshot-3"></div>
+          <div class="screenshot screenshot-4"></div>
+          <div class="screenshot screenshot-5"></div>
+          <div class="screenshot screenshot-6"></div>
+          <div class="screenshot screenshot-7"></div>
+          <div class="screenshot screenshot-8"></div>
+          <div class="screenshot screenshot-9"></div>
+          <div class="screenshot screenshot-10"></div>
+        </div>
+        <div class="arrow-wrapper">
+          <span class="screenshots__arrow-left arrow-left"></span>
+          <span class="screenshots__arrow-right arrow-right"></span>
+        </div>
+      </div>
+    </section>
+    <!--  END SCREENSHOTS  -->
+    <!--  PACKAGES SECTION  -->
+    <section class="packages-wrapper wrapper" id="packages">
+      <h2 class="title title-center-align packages__title">We've got the perfect package for you</h2>
+      <p class="subtitle title-center-align packages__subtitle">Everyone’s reasons for learning user
+        interface design are different. If you’re already a developer, or a PM,
+         or a UX designer, why develop this totally separate skill?
+      </p>
+      <div class="packages">
+        <div class="package">
+          <span class="package__title">Basic</span>
+          <div class="package__price-wrapper">
+            <span class="package__price"><sup>$</sup>12.0<sub>/m</sub></span>
+            <svg class="package__flag">
+              <polygon points="0,0 132.5,40 0,40"/>
+              <polygon points="265,0 265,40 132.5,40"/>
+            </svg>
+          </div>
+          <span class="package__condition">One User</span>
+          <span class="package__condition">Multiple Access</span>
+          <span class="package__condition">SMS Support</span>
+          <span class="package__condition no-border">24/7 Online Support</span>
+          <span class="package__label">Start Free Trial</span>
+          <a href="" class="link package__link link--white-button">Buy Now</a>
+        </div>
+        <div class="package">
+          <span class="package__title">Standart</span>
+          <div class="package__price-wrapper">
+            <span class="package__price"><sup>$</sup>24.0<sub>/m</sub></span>
+            <svg class="package__flag">
+              <polygon points="0,0 132.5,40 0,40"/>
+              <polygon points="265,0 265,40 132.5,40"/>
+            </svg>
+          </div>
+          <span class="package__condition">Five Users</span>
+          <span class="package__condition">Multiple Access</span>
+          <span class="package__condition">SMS Support</span>
+          <span class="package__condition no-border">24/7 Online Support</span>
+          <span class="package__label">Start Free Trial</span>
+          <a href="" class="link package__link link--white-button">Buy Now</a>
+        </div>
+        <div class="break"></div>
+        <div class="package">
+          <span class="package__title">Premium</span>
+          <div class="package__price-wrapper">
+            <span class="package__price"><sup>$</sup>250.0<sub>/m</sub></span>
+            <svg class="package__flag">
+              <polygon points="0,0 132.5,40 0,40"/>
+              <polygon points="265,0 265,40 132.5,40"/>
+            </svg>
+          </div>
+          <span class="package__condition">Twenty Users</span>
+          <span class="package__condition">Multiple Access</span>
+          <span class="package__condition">SMS Support</span>
+          <span class="package__condition no-border">24/7 Online Support</span>
+          <span class="package__label">Start Free Trial</span>
+          <a href="" class="link package__link link--white-button">Buy Now</a>
+        </div>
+        <div class="package">
+          <span class="package__title">Enterprise</span>
+          <div class="package__price-wrapper">
+            <span class="package__price"><sup>$</sup>999.0<sub>/m</sub></span>
+            <svg class="package__flag">
+              <polygon points="0,0 132.5,40 0,40"/>
+              <polygon points="265,0 265,40 132.5,40"/>
+            </svg>
+          </div>
+          <span class="package__condition">Unlimited Users</span>
+          <span class="package__condition">Multiple Access</span>
+          <span class="package__condition">SMS Support</span>
+          <span class="package__condition no-border">24/7 Online Support</span>
+          <span class="package__label">Start Free Trial</span>
+          <a href="" class="link package__link link--white-button">Buy Now</a>
+        </div>
+      </div>
+    </section>
+    <!--  END PACKAGES  -->
+    <!--  FAKE-VIDEO SECTION  -->
+    <section class="fake-video">
+      <div class="fake-video-wrapper">
+        <span class="fake-video__launching-icon"></span>
+      </div>
+    </section>
+    <!--  END FAKE-VIDEO  -->
+    <!--  COMMENTS SECTION  -->
+    <section class="comments-wrappper wrapper">
+      <h2 class="title title-center-align comments__title">What our customers are saying</h2>
+      <p class="subtitle title-center-align comments__subtitle">
+        Everyone’s reasons for learning user interface design are different. If
+        you’re already a developer, or a PM, or a UX designer, why develop this
+        totally separate skill?
+      </p>
+      <div class="comments">
+        <div class="comment">
+          <p class="comment__text">
+            The JustLanded for WordPress theme is great, super easy to use and
+            to customize and the support is just awesome: super fast and
+            reliable.
+          </p>
+          <div class="comment__account">
+            <span class="account__photo account__photo1"></span>
+            <span class="account__name">Alexandra Bullock</span>
+            <span class="account__org">Apple Inc.</span>
+          </div>
+        </div>
+        <div class="comment">
+          <p class="comment__text">
+            Very happy with the theme and incredibly easy to configure, well
+            done! I cannot emphasize how awesome this theme and developer
+            support are.
+          </p>
+          <div class="comment__account">
+            <span class="account__photo account__photo2"></span>
+            <span class="account__name">Gary Sebastian</span>
+            <span class="account__org">Apple Inc.</span>
+          </div>
+        </div>
+        <div class="comment">
+          <p class="comment__text">
+            Definitely a great theme and the support team are fantastic.
+            Customer support is numero uno and ShapingRain have got this
+            spot on. Cheers guys.
+          </p>
+          <div class="comment__account">
+            <span class="account__photo account__photo3"></span>
+            <span class="account__name">Samantha Bilbau</span>
+            <span class="account__org">Apple Inc.</span>
+          </div>
+        </div>
+      </div>
+      <div class="comments__arrow-wrapper arrow-wrapper">
+        <span class="comments__arrow-left arrow-left"></span>
+        <span class="comments__arrow-right arrow-right"></span>
+      </div>
+    </section>
+    <!--  END COMMENTS  -->
+    <!--  DOWNLOAD SECTION  -->
+    <section class="download-wrapper" id="download">
+      <div class="wrapper">
+        <h2 class="title title-center-align download__title">Download Giant App Now</h2>
+        <div class="download">
+          <div class="download__button">
+            <span class="button__icon apple__icon"></span>
+            <div class="button__text">
+              <span class="button__title">Download</span>
+              <span class="button__anchor">Download from app store</span>
+            </div>
+          </div>
+          <div class="download__button">
+            <span class="button__icon android__icon"></span>
+            <div class="button__text">
+              <span class="button__title">Download</span>
+              <span class="button__anchor">Download from play store</span>
+            </div>
+          </div>
+          <div class="download__button">
+            <span class="button__icon microsoft__icon"></span>
+            <div class="button__text">
+              <span class="button__title">Download</span>
+              <span class="button__anchor">Download from microsoft store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  END DOWNLOAD  -->
+  </main>
+  <!--  FOOTER SECTION  -->
+  <footer class="footer">
+    <div class="footer__icons">
+      <span class="footer__icon footer__icon--facebook"></span>
+      <span class="footer__icon footer__icon--twitter"></span>
+      <span class="footer__icon footer__icon--dribble"></span>
+      <span class="footer__icon footer__icon--Behance"></span>
+    </div>
+    <span class="footer__info">Copyright © 2017  |  UXSEVEN - a sister
+      concern of codepixar.com</span>
+  </footer>
+<script src="scripts/header__bar.js"></script>
+<script src="scripts/screenshots.js"></script>
+</body>
+</html>

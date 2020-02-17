@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search room filter</title>
+  <link href="search-room.css" rel="stylesheet"></head>
+  <body>
+        <header class="header">
+          <div class="header-wrapper">
+            <div class="header__logo"><svg class="logo_color" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.0003 27.0587C19.3533 27.0587 18.8239 26.5292 18.8239 25.8822C18.8239 21.3528 15.118 17.6469 10.5886 17.6469C9.94152 17.6469 9.41211 17.1175 9.41211 16.4704C9.41211 15.8234 9.94152 15.2939 10.5886 15.2939C16.4415 15.2939 21.1768 20.0292 21.1768 25.8822C21.1768 26.5292 20.6474 27.0587 20.0003 27.0587Z" fill="url(#paint0_linear)"/>
+<path d="M30.5884 16.4704C30.5884 17.1175 30.0589 17.6469 29.4119 17.6469C26.6178 17.6469 24.1178 19.0587 22.6472 21.2057C22.3236 20.3822 21.9413 19.6175 21.4707 18.9116C23.4119 16.6763 26.2648 15.2939 29.4119 15.2939C30.0589 15.2939 30.5884 15.8234 30.5884 16.4704Z" fill="url(#paint1_linear)"/>
+<path d="M20 40C8.97059 40 0 31.0294 0 20C0 8.97059 8.97059 0 20 0C31.0294 0 40 8.97059 40 20C40 31.0294 31.0294 40 20 40ZM20 2.35294C10.2647 2.35294 2.35294 10.2647 2.35294 20C2.35294 29.7353 10.2647 37.6471 20 37.6471C29.7353 37.6471 37.6471 29.7353 37.6471 20C37.6471 10.2647 29.7353 2.35294 20 2.35294Z" fill="url(#paint2_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="15.2945" y1="15.2939" x2="15.2945" y2="27.0587" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BC9CFF"/>
+<stop offset="1" stop-color="#8BA4F9"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="26.0295" y1="15.2939" x2="26.0295" y2="21.2057" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6FCF97"/>
+<stop offset="1" stop-color="#66D2EA"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BC9CFF"/>
+<stop offset="1" stop-color="#8BA4F9"/>
+</linearGradient>
+</defs>
+</svg><span class="logo__text">toxin</span>
+            </div>
+            <div class="header__navigation">
+              <ul class="navigation-wrapper"><a href="../landing/landing.html">
+                  <li class="hf__text h__bold">Home</li></a>
+                <li class="hf__text">About Us </li>
+                <li class="hf__text h__text-arrow">Services <span class="__arrow"></span></li>
+                <li class="hf__text">Careers</li>
+                <li class="hf__text">News</li>
+                <li class="hf__text">Documentation</li>
+              </ul>
+              <div class="accaunt-wrapper"><a class="btn btn_purple-border" href="./../signIn/signIn.html">login</a><a class="btn btn_purple" href="./../registration/registration.html">register</a>
+              </div>
+            </div>
+          </div>
+        </header>
+    <div class="page__wrapper search-room-wrapper">
+      <div class="search-room__filter">
+            <div class="form-el-container"><span class="form-el-container__title">дата пребывания в отеле</span><span class="form-el-container__additional-word"></span><br><span class="date-dropdown--filter__arrow date-dropdown__arrow"> </span>
+<input class="text-field__input text-field__input--filter" id="filter" value="19авг - 23авг">
+            </div>
+            <div class="form-el-container"><span class="form-el-container__title">гости</span><span class="form-el-container__additional-word"></span><br>
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">Сколько гостей</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a>
+  <ul class="dropdown dropdown_guests dropdown_guests_for-site"> 
+    <li>взрослые 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle adults-minus">-</span><span class="dropdown__count adults-count">0</span><span class="dropdown__plus-circle adults-plus">+</span></div>
+    </li>
+    <li>дети 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle kids-minus">-</span><span class="dropdown__count kids-count">0</span><span class="dropdown__plus-circle kids-plus">+</span></div>
+    </li>
+    <li>младенцы
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle babies-minus">-</span><span class="dropdown__count babies-count">0</span><span class="dropdown__plus-circle babies-plus">+</span></div>
+    </li>
+    <li> 
+      <div class="dropdown_guests__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
+    </li>
+  </ul>
+</div>
+            </div>
+<div class="price-range"><span class="price-range__title">диапазон цены</span><span class="price-range__slider-result"></span>
+  <div class="price-range__slider"></div>
+  <p class="price-range__text">Стоимость за сутки пребывания в номере</p>
+</div>
+<div class="checkbox">
+  <p class="checkbox__text">checkbox buttons</p>
+  <div class="checkbox__part">
+    <input type="checkbox" id="smoke">
+    <label class="checkbox__btn" for="smoke">Можно курить</label>
+  </div>
+  <div class="checkbox__part">
+    <input type="checkbox" id="pet" checked>
+    <label class="checkbox__btn" for="pet">Можно с питомцами</label>
+  </div>
+  <div class="checkbox__part">
+    <input type="checkbox" id="guests" checked>
+    <label class="checkbox__btn" for="guests">Можно пригласить гостей<br>(до 10 человек)</label>
+  </div>
+</div>
+            <div class="rich-checkbox">
+              <p class="checkbox__text">доступность</p>
+              <div class="checkbox__part">
+                <input type="checkbox" id="wide-coridor">
+                <label class="checkbox__btn rich-checkbox__btn" for="wide-coridor">Широкий коридор</label><span class="rich-checkbox__part__text">Ширина коридоров в номере <br>не менее 91 см.</span>
+              </div>
+              <div class="checkbox__part">
+                <input type="checkbox" id="invalid-helper">
+                <label class="checkbox__btn rich-checkbox__btn" for="invalid-helper">Помощник для инвалидов</label><span class="rich-checkbox__part__text">На 1 этаже вас встретит специалист<br> и проводит до номера.</span>
+              </div>
+            </div>
+            <div class="form-el-container"><span class="form-el-container__title">удобства номера</span><span class="form-el-container__additional-word"></span><br>
+<div class="dropdown-wrapper dropdown_features-wrapper">
+  <div class="btn-dropdown btn-dropdown_features"> 
+    <div class="btn-dropdown-text btn-dropdown_features-text"> <span class="btn-dropdown_features-text__bedroom-count">2</span><span class="btn-dropdown_features-text__bedroom-word">&nbspспальни, </span><span class="btn-dropdown_features-text__bed-count">2</span><span class="btn-dropdown_features-text__bed-word">&nbspкровати...</span></div>
+    <div class="btn-dropdown__arrow btn-dropdown_features__arrow"></div>
+  </div>
+  <ul class="dropdown dropdown_features"> 
+    <li>спальни 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bedroom-minus">-</span><span class="dropdown__count bedroom-count">2</span><span class="dropdown__plus-circle bedroom-plus">+</span></div>
+    </li>
+    <li>кровати 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bed-minus">-</span><span class="dropdown__count bed-count">2</span><span class="dropdown__plus-circle bed-plus">+</span></div>
+    </li>
+    <li>ванные комнаты
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bathroom-minus">-</span><span class="dropdown__count bathroom-count">0</span><span class="dropdown__plus-circle bathroom-plus">+</span></div>
+    </li>
+  </ul>
+</div>
+            </div>
+            <div class="expandable-checkbox">
+              <p class="checkbox__text">дополнительные удобства<span class="checkbox__text__arrow"></span></p>
+              <div class="expandable-checkbox-wrapper">
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="breakfast">
+                  <label class="checkbox__btn" for="breakfast">Завтрак</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="table" checked>
+                  <label class="checkbox__btn" for="table">Письменный стол</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="child-chair" checked>
+                  <label class="checkbox__btn" for="child-chair">Стул для кормления</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="child-bed">
+                  <label class="checkbox__btn" for="child-bed">Кроватка</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="TV" checked>
+                  <label class="checkbox__btn" for="TV">Телевизор</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="shampoo" checked>
+                  <label class="checkbox__btn" for="shampoo">Шампунь</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="TV1" checked>
+                  <label class="checkbox__btn" for="TV1">Телевизор</label>
+                </div>
+                <div class="checkbox__part expandable-checkbox__part">
+                  <input type="checkbox" id="shampoo1" checked>
+                  <label class="checkbox__btn" for="shampoo1">Шампунь</label>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="rooms">
+        <div class="rooms__title">Номера, которые мы для вас подобрали</div>
+        <div class="rooms__wrapper">
+          <div class="rooms__wrapper__link">
+                <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo1.png"><span class="__arrow __arrow_left"></span><span class="__arrow __arrow_right"></span><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                  <div class="room-properties__info"><span class="room__number">№888</span><span class="room__feature">люкс</span><span class="room__text"> <strong>9990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                        <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                        </div><span class="room__text"> <strong>145</strong><span>&nbspОтзывов</span></span>
+                  </div>
+                </div><a href="./../room-details/room-details.html"></a>
+          </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo2.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№840</span><span class="room__text"> <strong>8990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>65</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo3.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№980</span><span class="room__text"> <strong>8500₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>24</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo4.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№856</span><span class="room__text"> <strong>7800₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>69</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo5.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№740</span><span class="room__feature">люкс</span><span class="room__text"> <strong>9990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>78</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo6.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№982</span><span class="room__text"> <strong>6990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                      </div><span class="room__text"> <strong>95</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo7.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№678</span><span class="room__text"> <strong>7300₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>125</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo8.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№450</span><span class="room__text"> <strong>8290₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                      </div><span class="room__text"> <strong>75</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo9.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№354</span><span class="room__text"> <strong>8888₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                      </div><span class="room__text"> <strong>130</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo10.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№322</span><span class="room__text"> <strong>6700₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star"> </span><span class="rate-btn__star"> </span>
+                      </div><span class="room__text"> <strong>65</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo11.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№289</span><span class="room__feature">люкс</span><span class="room__text"> <strong>9990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                      </div><span class="room__text"> <strong>68</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+              <div class="room-properties cards-wrapper"><span class="room-properties__photo"><img src="./../../images/room-photo12.png"><span class="room-properties__circles"><span class="circle circle_active"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></span></span>
+                <div class="room-properties__info"><span class="room__number">№282</span><span class="room__text"> <strong>7990₽</strong><span>&nbspв сутки</span></span><span class="room__line"> </span>
+                      <div class="rate-btn"><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span><span class="rate-btn__star rate-btn__star_active"> </span>
+                      </div><span class="room__text"> <strong>99</strong><span>&nbspОтзывов</span></span>
+                </div>
+              </div>
+        </div>
+        <div class="rooms__pagination">
+<div class="pagination-wrapper">
+  <ul class="pagination">
+    <li class="pagination__active-item"> <span>1</span></li>
+    <li> <span>2 </span></li>
+    <li> <span>3 </span></li>
+    <li> <span>... </span></li>
+    <li> <span>15 </span></li>
+    <li class="pagination__arrow-item"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0.426758L17.0156 8.44238L9 16.458L7.59375 15.0518L13.1719 9.42676H0.984375V7.45801H13.1719L7.59375 1.83301L9 0.426758Z" fill="white"/>
+</svg>
+    </li>
+  </ul>
+  <p>1-12 из 100+ вариантов аренды</p>
+</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-WnC">
+      <div class="footer-WnC-widgets">
+        <div class="footer-WnC-widgets__part">
+          <div class="footer-WnC-widgets__part__logo"><svg class="logo_color" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.0003 27.0587C19.3533 27.0587 18.8239 26.5292 18.8239 25.8822C18.8239 21.3528 15.118 17.6469 10.5886 17.6469C9.94152 17.6469 9.41211 17.1175 9.41211 16.4704C9.41211 15.8234 9.94152 15.2939 10.5886 15.2939C16.4415 15.2939 21.1768 20.0292 21.1768 25.8822C21.1768 26.5292 20.6474 27.0587 20.0003 27.0587Z" fill="url(#paint0_linear)"/>
+<path d="M30.5884 16.4704C30.5884 17.1175 30.0589 17.6469 29.4119 17.6469C26.6178 17.6469 24.1178 19.0587 22.6472 21.2057C22.3236 20.3822 21.9413 19.6175 21.4707 18.9116C23.4119 16.6763 26.2648 15.2939 29.4119 15.2939C30.0589 15.2939 30.5884 15.8234 30.5884 16.4704Z" fill="url(#paint1_linear)"/>
+<path d="M20 40C8.97059 40 0 31.0294 0 20C0 8.97059 8.97059 0 20 0C31.0294 0 40 8.97059 40 20C40 31.0294 31.0294 40 20 40ZM20 2.35294C10.2647 2.35294 2.35294 10.2647 2.35294 20C2.35294 29.7353 10.2647 37.6471 20 37.6471C29.7353 37.6471 37.6471 29.7353 37.6471 20C37.6471 10.2647 29.7353 2.35294 20 2.35294Z" fill="url(#paint2_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="15.2945" y1="15.2939" x2="15.2945" y2="27.0587" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BC9CFF"/>
+<stop offset="1" stop-color="#8BA4F9"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="26.0295" y1="15.2939" x2="26.0295" y2="21.2057" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6FCF97"/>
+<stop offset="1" stop-color="#66D2EA"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BC9CFF"/>
+<stop offset="1" stop-color="#8BA4F9"/>
+</linearGradient>
+</defs>
+</svg><span class="logo__text">toxin</span>
+          </div>
+          <p class="footer-WnC-widgets__part__text"> Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.</p>
+        </div>
+        <div class="footer-WnC-widgets__nav"><span class="f__bold">navigation</span><span class="hf__text">About Us</span><span class="hf__text">News</span><span class="hf__text">Support</span><span class="hf__text">Products</span></div>
+        <div class="footer-WnC-widgets__aboutUs"><span class="f__bold">about us</span><span class="hf__text">Who we are</span><span class="hf__text">Our team</span><span class="hf__text">Careers</span><span class="hf__text">Investors</span></div>
+        <div class="footer-WnC-widgets__sup"><span class="f__bold">support</span><span class="hf__text">Documentation</span><span class="hf__text">Community</span><span class="hf__text">Get in Touch</span></div>
+        <div class="footer-WnC-widgets__sub"><span class="f__bold">subscribe to our newsletter</span>
+          <p>Receive our latest news and promotions in your inbox!</p>
+              <div class="input_sub-wrapper">
+                <input class="text-field__input text-field__input_sub" placeholder="Your email address"><span class="text-field_sub-arrow"></span>
+              </div>
+        </div>
+      </div>
+      <div class="footer-WnC-copyright"><span class="footer-WnC-copyright__text">Copyright © 2018 Toxin UI Kit. All rights reserved.</span>
+        <div class="footer__brands footer-WnC-copyrigh__brands"><span class="fab fa-twitter brands_twitter"></span><span class="fab fa-facebook-square brands_facebook"></span><span class="fab fa-instagram"></span></div>
+      </div>
+    </footer>
+  <script type="text/javascript" src="search-room.js"></script></body>
+</html>

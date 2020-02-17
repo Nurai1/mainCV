@@ -1,0 +1,22 @@
+.text-field__input{
+  width:320px;
+  height:44px;
+  background: #FFFFFF;
+  border: 1px solid fade-out($dark-shade,.75);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left:15px;
+  color: fade-out($dark-shade,.75);
+  outline: 0;
+}
+
+.text-field__input--hoverfocus, .text-field__input:hover, .text-field__input:focus{
+  border-color: fade-out($dark-shade,.5);
+  color: fade-out($dark-shade,.25);
+}
+
+.text-field__input::placeholder{
+  font-size: 14px;
+  line-height: 18px;
+  color: fade-out($dark-shade,.75);
+}

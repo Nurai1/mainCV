@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title Pug file
+  body
+    include ./../../mixins/mixins.pug
+    .colorsNtype
+      include ./../../blocks/logo/logo.pug
+      .colorsNtype-wrapper
+        .colors-container
+          +color-type("#1F2041", "Dark Shade 100%", '#1F2041')
+          +color-type("rgba(31, 32, 65, 0.75)", "Dark Shade 75%", '#1F2041')
+          +color-type("rgba(31, 32, 65, 0.5)", "Dark Shade 50%", '#1F2041')
+          +color-type("rgba(31, 32, 65, 0.25)", "Dark Shade 25%", '#1F2041')
+          +color-type("rgba(31, 32, 65, 0.05)", "Dark Shade 5%", '#1F2041')
+          +color-type("#BC9CFF", "Purple", '#BC9CFF')
+          +color-type("#6FCF97", "Green", '#6FCF97')
+        .fontsSize-container
+          .bigTitle.fontsSize__part
+            h1.fontsSize__part__title._titleH1 H1
+            h1.fontsSize__part__text This one is the sub-section or widget title
+          .medTitle.fontsSize__part
+            h2.fontsSize__part__title._titleH2 H2
+            h2.fontsSize__part__text Next one is the item title inside widgets
+          .smallTitle.fontsSize__part
+            h3.fontsSize__part__title._titleH3 H3
+            h3.fontsSize__part__text This is a label or CTA text
+          .fontsSize__part
+            span.fontsSize__part__title._titleBody Body
+            span.fontsSize__part__text This is the body text which is used for most of the design, like paragraphs, lists, etc.

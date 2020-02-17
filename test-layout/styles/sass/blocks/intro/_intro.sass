@@ -1,0 +1,50 @@
+/**** INTRO SECTION ****/
+
+.intro-wrapper
+  width: 100%
+  min-height: 700px
+  background: $gradient-color
+  box-sizing: border-box
+  padding-bottom: 50px
+  color: $main-font-color
+
+.intro
+  width: 500px
+  padding-top: 110px
+
+.intro__title
+  font-size: $great-title-fs
+  font-weight: $title-semi-bold
+  line-height: $great-title-lh
+  color: $main-font-color
+
+.intro__text
+  font-weight: $base-light
+  margin-top: 25px
+
+.intro__list
+  @extend %list
+  margin-top: 12px
+
+.link--white-button.intro__link
+  padding: 8px 40px
+  border: 5px solid rgba(0, 0, 0, 0.1)
+  border-radius: 25px
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1)
+  margin-top: 22px
+
+@media screen and (max-width: 1199.98px)
+  .intro-wrapper
+    min-height: auto
+    padding-bottom: 100px
+
+  .intro
+    margin: 0 auto
+    padding: 30px 10px 0
+
+@media screen and (max-width: 575.98px)
+  .intro
+    width: 300px
+
+  .intro__title
+    font-size: 32px

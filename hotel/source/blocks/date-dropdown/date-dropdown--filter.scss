@@ -1,0 +1,9 @@
+.text-field__input--filter{
+    width: 266px;
+    color: fade-out($dark-shade, .25);
+  }
+
+.text-field__input--filter::placeholder{
+  line-height: 18px;
+  color: fade-out($dark-shade, .25);
+}

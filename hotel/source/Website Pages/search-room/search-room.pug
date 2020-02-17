@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title Search room filter
+  body
+    include ./../../mixins/mixins.pug
+    +header(false)
+    
+    .page__wrapper.search-room-wrapper
+      .search-room__filter
+        +form-el-container("дата пребывания в отеле")
+          include ./../../blocks/date-dropdown/date-dropdown--filter--example.pug
+        +form-el-container("гости")
+          include ./../../blocks/dropdown/_guests/_guests.pug
+        include ./../../blocks/range-slider/range-slider.pug
+        include ./../../blocks/checkbox/checkbox.pug
+        +rich-checkbox("доступность")
+        +form-el-container("удобства номера")
+          include ./../../blocks/dropdown/_features/_features.pug
+        +expandable-checkbox('дополнительные удобства')
+      .rooms
+        .rooms__title Номера, которые мы для вас подобрали
+        .rooms__wrapper
+          .rooms__wrapper__link
+            +room-properties('room-photo1.png', true, 888, true, '9990₽', 5, 145)
+            a(href='./../room-details/room-details.html')
+          +room-properties('room-photo2.png', false, 840, false, '8990₽', 4, 65)
+          +room-properties('room-photo3.png', false, 980, false, '8500₽', 3, 24)
+          +room-properties('room-photo4.png', false, 856, false, '7800₽', 4, 69)
+          +room-properties('room-photo5.png', false, 740, true, '9990₽', 4, 78)
+          +room-properties('room-photo6.png', false, 982, false, '6990₽', 5, 95)
+          +room-properties('room-photo7.png', false, 678, false, '7300₽', 4, 125)
+          +room-properties('room-photo8.png', false, 450, false, '8290₽', 5, 75)
+          +room-properties('room-photo9.png', false, 354, false, '8888₽', 5, 130)
+          +room-properties('room-photo10.png', false, 322, false, '6700₽', 3, 65)
+          +room-properties('room-photo11.png', false, 289, true, '9990₽', 5, 68)
+          +room-properties('room-photo12.png', false, 282, false, '7990₽', 5, 99)
+        .rooms__pagination
+          include ./../../blocks/pagination/pagination.pug
+    include ./../../UI kit/headers&footers/footer-widgetsNcopyright.pug

@@ -1,0 +1,27 @@
+.expandable-checkbox{
+  width:266px;
+  display: inline-block;
+  position: relative;
+
+  .expandable-checkbox-wrapper{
+    display:none;
+  }
+
+  .checkbox__text__arrow{
+    float:right;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Material Icons';
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    @include material-icon('arrow_forward_ios');
+    transform: rotateZ(90deg);
+    color: fade-out($dark-shade, .5);
+  }
+
+}

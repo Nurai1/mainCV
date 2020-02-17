@@ -1,0 +1,25 @@
+mixin room-properties(photoName, arrowsExist, number, featureExist, price, rate, review)
+  -photoDir='./../../images/'+photoName
+  .room-properties.cards-wrapper
+    span.room-properties__photo
+      img(src=photoDir)
+      if(arrowsExist)
+        span.__arrow.__arrow_left
+        span.__arrow.__arrow_right
+      span.room-properties__circles
+        span.circle.circle_active
+        span.circle
+        span.circle
+        span.circle
+    .room-properties__info
+      span.room__number №#{number}
+      if(featureExist)
+        span.room__feature люкс
+      span.room__text 
+        strong= price  
+        span &nbspв сутки
+      span.room__line 
+      +rate-btn(rate)
+      span.room__text 
+        strong= review 
+        span &nbspОтзывов

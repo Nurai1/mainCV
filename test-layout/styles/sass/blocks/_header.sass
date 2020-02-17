@@ -1,0 +1,75 @@
+/**** HEADER SECTION ****/
+
+.header
+  width: 100%
+  height: 100px
+  background: $gradient-color
+  box-sizing: border-box
+  padding-top: 32px
+
+.logo
+  color: $main-font-color
+  font-size: $title-font-size
+
+  span
+    font-family: $title-font-family
+    font-weight: $title-bold
+    vertical-align: text-top
+
+.link
+  display: inline-block
+  font-family: $base-font-family
+  font-size: $base-font-size
+  line-height: $base-line-height
+  font-weight: $base-medium
+  background-clip: padding-box
+
+.link.link--white-button
+  color: $title-font-color
+  background: $main-background
+  padding: 6px 28px
+  border-radius: 17px
+
+.nav__link
+  color: $main-font-color
+  margin-left: 53px
+
+.nav__link.link--white-button
+  margin-left: 40px
+
+.bar
+  display: none
+  width: 36px
+  height: 36px
+  position: relative
+
+  &::before
+    font-family: "Font Awesome 5 Free"
+    content: "\f0c9"
+    font-weight: 900
+    font-size: 36px
+    color: $main-font-color
+
+.navigation--bar
+  display: none
+  min-width: 80px
+  border-collapse: collapse
+  position: absolute
+  top: -10px
+  right: 120%
+
+.nav--bar__link
+  display: table-row
+  width: 100%
+  color: $main-font-color
+  background: rgba(247, 250, 252, 0.2)
+  text-align: center
+  box-sizing: border-box
+  border: 1px solid $border-color
+
+@media screen and (max-width: 767.98px)
+  .navigation
+    display: none
+
+  .bar
+    display: block

@@ -1,0 +1,58 @@
+/**** DESCRIPTION SECTION ****/
+
+.description-wrapper
+  min-height: 710px
+  position: relative
+  @extend %wrapper-padding-top-bot
+  padding-bottom: 0
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: (30/1200)*100%
+    width: (1140/1200)*100%
+    height: 2px
+    background-color: $border-color
+
+.description__screen
+  float: left
+  width: 650px
+  height: 550px
+  background: url('../../images/description__device.png') no-repeat
+  margin-left: -110px
+
+.description
+  float: right
+  width: 555px
+  margin-top: 45px
+
+.description__text
+  font-weight: $base-light
+  margin-bottom: 35px
+
+.description__list
+  @extend %list
+
+@media screen and (max-width: 1199.98px)
+  .description__screen
+    display: none
+
+  .description-wrapper
+    min-height: auto
+    padding: 50px 0
+
+  .description
+    float: none
+    padding: 0 10px
+    margin: 0 auto
+
+@media screen and (max-width: 575.98px)
+  .description
+    width: 300px
+
+  .description__subtitle
+    margin-bottom: 40px
+
+  .description__text
+    margin-bottom: 15px

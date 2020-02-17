@@ -1,0 +1,56 @@
+/**** Themes ****/
+
+.title
+  margin-bottom: 25px
+
+.subtitle
+  font-weight: $base-light
+  margin-bottom: 85px
+
+@media screen and (max-width: 575.98px)
+  .subtitle
+    margin-bottom: 45px
+
+.title-center-align
+  width: 670px
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+
+@media screen and (max-width: 767.98px)
+  .title-center-align
+    width: 300px
+
+.arrow-wrapper
+  display: flex
+  justify-content: center
+  margin-top: 60px
+
+.arrow-left, .arrow-right
+  display: inline-block
+  font-size: 14px
+  line-height: 44px
+  width: 44px
+  height: 44px
+  text-align: center
+  border: 1px solid $border-color
+  border-radius: 50%
+  cursor: pointer
+
+  &:hover
+    background: $gradient-color
+    color: #FFFFFF
+
+  &::after
+    font-family: "Font Awesome 5 Free"
+    font-size: 14px
+    font-weight: 900
+
+.arrow-left
+  margin-right: 20px
+
+.arrow-left::after
+  content: "\f30a"
+
+.arrow-right::after
+  content: "\f30b"

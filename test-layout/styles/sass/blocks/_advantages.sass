@@ -1,0 +1,77 @@
+/**** ADVANTAGES SECTION ****/
+
+.advantages-wrapper
+  min-height: 460px
+  @extend %wrapper-padding-top-bot
+
+.advantages
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-content: space-between
+
+.advantage
+  width: 360px
+  height: 80px
+  margin-bottom: 60px
+
+.advantage__icon
+  $current-height: 75px
+  font-size: 24px
+  display: inline-block
+  width: 75px
+  height: $current-height
+  color: $icon-color
+  background: $secondary-background
+  border: 1px solid $border-color
+  border-radius: 50%
+  text-align: center
+  line-height: $current-height
+  margin-right: 22px
+
+.advantage__title
+  font-family: $title-font-family
+  font-size: 24px
+  font-weight: $title-medium
+  color: $title-font-color
+  display: inline-block
+  max-width: 260px
+  height: 30px
+  overflow-y: hidden
+  margin-bottom: 5px
+
+.advantage__text
+  display: inline-block
+  max-width: 260px
+  height: 45px
+  overflow-y: hidden
+
+@media screen and (max-width: 1199.98px)
+  .advantages-wrapper
+    padding: 50px 0
+
+  .advantages
+    justify-content: space-around
+
+  .advantage
+    padding: 0 10px
+
+@media screen and (max-width: 575.98px)
+  .advantage
+    width: 300px
+
+  .advantage__icon
+    $current-height: 42px
+    font-size: 20px
+    width: 42px
+    height: $current-height
+    line-height: $current-height
+    margin-right: 8px
+
+  .advantage__title
+    max-width: 250px
+    height: 42px
+    line-height: 42px
+
+  .advantage__text
+    max-width: 300px

@@ -1,0 +1,28 @@
+.rate-btn{
+  width:120px;
+  height:24px;
+  display:inline-flex;
+  align-items: center;
+  text-align: center;
+}
+
+  .rate-btn__star{
+    cursor:pointer;
+    width:24px;
+    height:24px;
+    font-size: 24px;
+    line-height: 20px;
+    // Иконки под разные браузера
+    font-family: 'Material Icons';
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    @include material-icon('star_border');
+    color: $purple;
+  }
+
+  .rate-btn__star_active{
+    @include material-icon('star');
+  }

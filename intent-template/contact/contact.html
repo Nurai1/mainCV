@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ainur Sayapov Intent</title>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	 	<script type="text/javascript" src="scripts/map.js"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZntbYvXdTSxtwVvcxMkIcWQPAW6GQDj0&callback=initMap"></script>
+ <script src = "https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="php_mailer/examples/validate.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__topbar">
+			<div class="wrapper">
+				<div class="header__social-network-container">
+					<div class="header__social-network__item header__social-network__item--twitter"></div>
+					<div class="header__social-network__item header__social-network__item--facebook"></div>
+					<div class="header__social-network__item header__social-network__item--dribbble"></div>
+					<div class="header__social-network__item header__social-network__item--rss"></div>
+				</div>
+			</div>
+		</div>
+		<nav class="header__navigation wrapper">
+			<div class="header__navigation__logo">
+				<span class="logo__ico">i</span><a href="">Intent</a>
+			</div>
+			<div class="header__navigation__item">
+				<a href="../index.html">home</a>
+			</div>
+			<div class="header__navigation__item">
+				<a href="">blog</a>
+			</div>
+			<div class="header__navigation__item">
+				<a href="../portfolio/portfolio.html">portfolio</a>
+			</div>
+			<div class="header__navigation__item header__navigation__item--active">
+				<a href="">contact</a>
+			</div>
+		</nav>
+	</header>
+	<div class="photo-preview">
+	</div>
+		<div class="titles-wrapper">
+	<div class="titles-container">
+		<h2 class="title1">Contact</h2>
+		<span>We are only a click away</span>
+		</div>
+	</div>
+	<div class="map-wrapper">
+	<div id="map"></div>
+	</div>
+	<div class="form-wrapper">
+	<div class="content">
+	<div class="content__info">
+	<p class="info__text">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	Aenean sit amet feugiat libero, lacinia vehicula dui.
+	Praesent quis mollis mauris, nec porta ex.
+	</p>
+	<p class="info__text">
+	<span>Best PSD Freebies</span><br>
+	328 Ave C <br>
+	Saskatoon, SK <br>
+	S7R 2V9<br>
+	</p>
+	<p class="info__text">
+	t: (888) 842 - 8356<br>
+	f: (888) 452 - 9257 <br>
+	e: info@psdfreebies.com<br>
+	</p>
+	</div>
+	<form onSubmit="return validate(this)" class="content__form"  method="POST">
+	<input type="text" name="first_name" placeholder="First name" class="form__input" />
+	<input type="text" name="last_name" placeholder="Last name" class="form__input" />
+	<input type="text" name="mail" placeholder="Email" class="form__input" />
+	<input type="text" name="Url" placeholder="Url" class="form__input" />
+	<textarea name="Message" placeholder="Message" cols="30" rows="10" class="form__text"></textarea>
+	<input type="submit" value="SUBMIT"/>
+	</form>
+	</div>
+	</div>
+
+ 	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__content">
+				<div class="footer__content__block">
+					<h4 class="footer__title">RECENT POSTS</h4>
+					<p class="footer__text">
+					<span class="footer__text__border">Wedding Photos that Will Blow Your Mind Away.</span>
+					<span class="footer__text__border">Intent Wordpss Theme Features are  Amazing.</span>
+					<span class="footer__text__border">A New Era of Design is Here</span>
+					<span>Creativio Wordpss Theme now Available for Sale.</span>
+					</p>
+				</div>
+				<div class="footer__content__block">
+					<h4 class="footer__title">ABOUT INTENT</h4>
+					<p class="footer__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Nulla et mauris in nulla lobortis pellentesque. Nunc finibus
+					eros vel quam mattis, sit amet blandit enim maximus.
+					Proin bibendum dolor ut enim lobortis consequat.
+					</p>
+					<p class="footer__text">Duis dapibus lectus vitae venenatis
+					ptium. Nunc lacinia convallis dui ac sagittis. Nullam
+					commodo turpis vitae lacus pellentesque.
+				</div>
+				<div class="footer__block">
+					<h4 class="footer__title">SOCIAL MEDIA</h4>
+					<div class="footer__icons">
+						<div class="footer__icons-social-network footer__icons-facebook"></div>
+						<div class="footer__icons-social-network footer__icons-dribbble"></div>
+						<div class="footer__icons-social-network footer__icons-rss"></div>
+						<div class="footer__icons-social-network footer__icons-twitter"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

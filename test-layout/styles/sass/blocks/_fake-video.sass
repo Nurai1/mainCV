@@ -1,0 +1,36 @@
+/**** FAKE-VIDEO SECTION ****/
+
+.fake-video
+  width: 100%
+  height: 400px
+  background: url('../../images/fake-video.png') no-repeat
+  background-position: center top
+  background-size: cover
+
+.fake-video-wrapper
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.702)
+  position: relative
+
+.fake-video__launching-icon
+  $launch-icon-size: 75px
+  text-align: center
+  width: $launch-icon-size
+  height: $launch-icon-size
+  line-height: $launch-icon-size
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -$launch-icon-size/2
+  margin-left: -$launch-icon-size/2
+  background: $gradient-color
+  color: $main-font-color
+  border-radius: 50%
+  cursor: pointer
+
+  &::after
+    font-family: "Font Awesome 5 Free"
+    content: "\f04b"
+    font-size: 25px
+    font-weight: 900

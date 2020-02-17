@@ -1,0 +1,114 @@
+/**** DOWNLOAD SECTION ****/
+
+.download-wrapper
+  @extend %wrapper-padding-top-bot
+  min-height: 470px
+  background: $gradient-color
+
+.download__title
+  color: $main-font-color
+  margin-bottom: 80px
+
+.download
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.download__button
+  width: 360px
+  height: 120px
+  background: $main-background
+  margin-right: 5px
+  margin-bottom: 25px
+  outline: none
+  cursor: pointer
+
+
+  &:hover
+    .button__icon::after
+      background: -webkit-gradient(linear, left center, right center,
+      from(rgb(253,113,44)), to(rgb(242,23,128)))
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+.button__icon
+  float: left
+  width: 115px
+  height: 120px
+  background: $secondary-background
+  line-height: 120px
+  text-align: center
+
+  &::after
+    font-family: "Font Awesome 5 Brands"
+    font-size: 60px
+    font-weight: 400
+    color: $base-font-color
+    -webkit-text-stroke: 1.5px $border-color
+
+.apple__icon::after
+  content: "\f179"
+
+.android__icon::after
+  content: "\f17b"
+
+.microsoft__icon::after
+  content: "\f17a"
+
+.button__text
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
+  width: 235px
+  height: 100%
+  padding-left: 20px
+  padding-right: 20px
+  box-sizing: border-box
+
+.button__title
+  display: inline-block
+  height: 36px
+  overflow: hidden
+  font-family: $title-font-family
+  font-size: 30px
+  color: $title-font-color
+
+.button__anchor
+  display: inline-block
+  max-height: 48px
+  overflow: hidden
+  font-family: $base-font-family
+  font-size: $base-font-size
+  line-height: $base-line-height
+  font-weight: $base-light
+  color: $base-font-color
+
+@media screen and (max-width: 1199.98px)
+  .download-wrapper
+    padding: 50px 0
+
+  .download__title
+    margin-bottom: 40px
+
+  .download
+    padding: 0 10px
+    justify-content: space-around
+
+@media screen and (max-width: 575.98px)
+  .download__button
+    width: 300px
+    height: 100px
+
+  .button__icon
+    width: 100px
+    height: 100px
+    line-height: 100px
+
+    &::after
+      font-size: 50px
+      -webkit-text-stroke: 0.75px $border-color
+
+  .button__text
+    width: 190px
+    padding-left: 10px
+    padding-right: 10px

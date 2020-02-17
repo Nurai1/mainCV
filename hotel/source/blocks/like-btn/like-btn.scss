@@ -1,0 +1,55 @@
+.like-btn{
+  width:40px;
+  height:20px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid fade-out($dark-shade, .75);
+  border-radius: 10px;
+  cursor:pointer;
+  display:inline-block;
+}
+
+  .like-btn__sum{
+    text-align: center;
+    position:relative;
+    top: -3px;
+    width:6px;
+    height:13px;
+    font-size: 10px;
+    line-height: 12px;
+    color: fade-out($dark-shade, .75);
+    display: inline-block;
+  }
+
+  .like-btn__heart{
+    width:20px;
+    heght:20px;
+    text-align: center;
+    position:relative;
+    top:-2px;
+    font-size: 10px;
+    line-height: 9px;
+    display: inline-block;
+    color:fade-out($dark-shade, .75);
+    // Иконки под разные браузера
+    font-family: 'Material Icons';
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    @include material-icon('favorite_border');
+  }
+
+.like-btn_active{
+  border-color: $purple;
+
+  .like-btn__sum{
+    color: $purple;
+  }
+
+  .like-btn__heart{
+    @include material-icon('favorite');
+    color: $purple;
+  }
+}

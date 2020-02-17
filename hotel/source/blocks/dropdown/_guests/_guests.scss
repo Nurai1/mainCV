@@ -1,0 +1,31 @@
+.dropdown_guests{
+  width:320px;
+  height:159px;
+}
+
+.dropdown_guests_for-site{
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+
+.btn-dropdown_guests{
+  width:320px;
+  height:45px;
+}
+
+.dropdown_guests__bottom-btns{
+    display:flex;
+    justify-content: space-between;
+    margin-top:32px;
+    color: fade-out($dark-shade,.5);
+    cursor:pointer;
+}
+
+.dropdown__bottom-btns{
+  display:flex;
+  justify-content: space-between;
+  margin-top:32px;
+  color: fade-out($dark-shade,.5);
+  cursor:pointer;
+}

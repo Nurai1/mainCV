@@ -1,0 +1,7 @@
+mixin color-type(clr, clrText, clrCode)
+  .color-wrapper
+    .color-bg(style='background:'+clr)
+    .color-text
+      span <strong>#{clrText}</strong>
+      span= clrCode
+    

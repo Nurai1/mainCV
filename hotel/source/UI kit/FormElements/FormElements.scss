@@ -1,0 +1,98 @@
+//**UI Kit: form elements structure
+@import './../../attributes.scss';
+
+.form-el-container{
+  margin-bottom: 20px;
+}
+
+.form-el__wrapper__first-col, .form-el__wrapper__fourth-col{
+  width: 320px;
+  margin-right: 126px;
+}
+
+.form-el__wrapper__second-col, .form-el__wrapper__fifth-col{
+  width: 320px;
+  margin-right: 72px;
+}
+
+.form-el__wrapper__third-col, .form-el__wrapper__sixth-col{
+  width: 320px;
+}
+
+//**pixel perfect
+
+.form-el__wrapper__first-col, .form-el__wrapper__second-col,
+.form-el__wrapper__third-col{
+  margin-bottom: 100px;
+}
+
+.text-field__input--masked{
+  margin-bottom:40px;
+}
+
+.date-dropdown{
+  margin-bottom: 40.56px;
+}
+
+.text-field__input--filter{
+  margin-bottom: 41px;
+}
+
+.dropdown_features{
+  margin-bottom: 54.44px;
+}
+
+.expandable-checkbox--default{
+  margin-bottom: 49px;
+}
+
+.expandable-checkbox--expanded{
+  margin-bottom: 44.44px;
+}
+
+.checkbox{
+  margin-bottom: 40.88px;
+}
+
+.radio-btns{
+  margin-bottom: 36.56px;
+}
+
+.toggle--disabled{
+  margin-bottom: 44.44px;
+}
+
+.like-btn{
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.rate-btn_partFilled{
+margin-right: 20px;
+margin-top: 16px;
+}
+
+.price-range{
+  margin-bottom: 44.56px;
+}
+
+.UIKit-buttons{
+  margin-bottom: 40px;
+}
+
+.btn_with-arrow{
+  margin-bottom: 40px;
+}
+
+.icon-text-list{
+  margin-right: 160px;
+}
+
+.comment{
+  margin-top: 10px;
+}
+
+.date-dropdown--filter__arrow{
+  top: 10px;
+  left:-25px;
+}

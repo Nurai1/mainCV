@@ -1,0 +1,137 @@
+/**** SCREENSHOTS SECTION ****/
+
+.screenshots-wrapper
+  width: 100%
+  min-height: 920px
+  background-color: $secondary-background
+  @extend %wrapper-padding-top-bot
+
+.screenshots
+  width: 100%
+  height: 500px
+  position: relative
+
+.screenshot
+  position: absolute
+  display: inline-block
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1)
+
+@for $i from 1 through 3
+
+  .screenshot-#{$i}
+    background: url('../../images/screenshots/screen-#{$i}.png') no-repeat left top
+
+@for $i from 5 through 7
+
+  .screenshot-#{$i}
+    background: url('../../images/screenshots/screen-#{$i}.png') no-repeat right top
+
+.screenshot-1
+  +screenshot(inline-block, 0, unset, 200px, 280px, 110px, 1)
+
+.screenshot-2
+  +screenshot(inline-block, 68px, unset, 260px, 360px, 70px, 2)
+
+.screenshot-3
+  +screenshot(inline-block, 195px, unset, 315px, 440px, 30px, 3)
+
+.screenshot-4
+  background: url('../../images/screenshots/screen-4.png') no-repeat center top
+  +screenshot(inline-block, 390px, unset, 360px, 500px, 0, 4)
+
+.screenshot-5
+  +screenshot(inline-block, unset, 195px, 315px, 440px, 30px, 3)
+
+.screenshot-6
+  +screenshot(inline-block, unset, 68px, 260px, 360px, 70px, 2)
+
+.screenshot-7
+  +screenshot(inline-block, unset, 0, 200px, 280px, 110px, 1)
+
+.screenshot-8, .screenshot-9, .screenshot-10
+  background: url('../../images/screenshots/screen-3.png') no-repeat center top
+  display: none
+
+@media screen and (max-width: 1199.98px)
+  .screenshots-wrapper
+    min-height: 920px
+    padding: 50px 0
+
+  .screenshots
+    width: 748px
+    height: 500px
+    margin: 0 auto
+    padding: 0 10px
+
+  .screenshot-1
+    display: none
+
+  .screenshot-2
+    left: 0
+
+  .screenshot-3
+    left: 90px
+
+  .screenshot-4
+    left: 200px
+
+  .screenshot-5
+    right: 90px
+
+  .screenshot-6
+    right: 0
+
+  .screenshot-7
+    display: none
+
+@media screen and (min-width: 576px) and (max-width: 767.98px)
+    .screenshots
+      width: 516px
+      height: 440px
+
+    .screenshot-2
+      left: 0
+      width: 200px
+      height: 280px
+
+    .screenshot-3
+      left: 50px
+      width: 260px
+      height: 360px
+
+    .screenshot-4
+      left: 110px
+      width: 315px
+      height: 440px
+
+    .screenshot-5
+      right: 50px
+      width: 260px
+      height: 360px
+
+    .screenshot-6
+      right: 0
+      width: 200px
+      height: 280px
+
+@media screen and (max-width: 575.98px)
+  .screenshots
+    width: 300px
+    height: 280px
+
+  .screenshot
+    box-shadow: none
+    background-size: contain
+
+  .screenshot-2, .screenshot-3, .screenshot-6, .screenshots__arrow-left
+    display: none
+
+  .screenshot-4
+    left: 0
+    width: 240px
+    height: 320px
+
+  .screenshot-5
+    right: 0
+    width: 220px
+    height: 280px

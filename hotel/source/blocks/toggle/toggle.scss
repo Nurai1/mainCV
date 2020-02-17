@@ -1,0 +1,51 @@
+.toggle{
+  width:260px;
+  height:24px;
+  display: inline-block;
+}
+
+  input[type="checkbox"]#specialOffer{
+    display:none;
+  }
+
+  .toggle__btn{
+    position:relative;
+    left:50px;
+    color: fade-out($dark-shade, .25);
+    cursor:pointer;
+  }
+
+  .toggle__btn:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-50px;
+    width:40px;
+    height:20px;
+    background: #FFFFFF;
+    border: 1px solid fade-out($dark-shade, .75);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .toggle__btn:after{
+    content:"";
+    position:absolute;
+    top:4px;
+    left:-46px;
+    width:12px;
+    height:12px;
+    background: fade-out($dark-shade, .75);
+    border-radius: 10px;
+  }
+
+  input[type="checkbox"]#specialOffer:checked{
+    ~.toggle__btn:after{
+      left: -26px;
+      background: $purple-gradient;
+    }
+
+    ~.toggle__btn:before{
+      border-color: $purple-gradient;
+    }
+  }

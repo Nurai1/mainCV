@@ -1,0 +1,19 @@
+.btn_with-arrow{
+  background: $purple-gradient;
+  color:#fff;
+  box-sizing: border-box;
+  width:320px;
+  height:45px;
+  text-align:center;
+}
+
+.btn_with-arrow:hover{
+  opacity:0.5;
+}
+
+.arrow-at-btn{
+  float:right;
+  position:relative;
+  top:-3px;
+  right:-5px;
+}

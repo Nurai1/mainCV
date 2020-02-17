@@ -1,0 +1,82 @@
+/**** COMMENTS SECTION ****/
+
+.comments-wrappper
+  @extend %wrapper-padding-top-bot
+  min-height: 695px
+
+.comments
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.comment
+  display: inline-block
+  width: 360px
+  box-sizing: border-box
+  padding: 40px 35px
+  background-color: $secondary-background
+  margin-right: 5px
+  margin-bottom: 10px
+
+  &:hover
+    background-color: $main-background
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1)
+
+.comment__text
+  height: 90px
+  overflow-y: hidden
+
+.comment__account
+  margin-top: 20px
+
+.account__photo1
+  background: url('../../images/comment__photo1.png') center
+.account__photo2
+  background: url('../../images/comment__photo2.png') center
+.account__photo3
+  background: url('../../images/comment__photo3.png') center -50px
+
+.account__photo
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  margin-right: 20px
+  float: left
+
+.account__name
+  display: inline-block
+  width: 180px
+  height: $base-line-height
+  overflow: hidden
+  font-family: $title-font-family
+  font-size: 18px
+  line-height: $base-line-height
+  color: $title-font-color
+  margin-top: 15px
+
+.account__org
+  display: inline-block
+  width: 180px
+  height: $base-line-height
+  overflow: hidden
+  font-weight: $base-light
+
+@media screen and (max-width: 1199.98px)
+  .comments-wrappper
+    padding: 50px 0
+
+  .comments
+    padding: 0 10px
+    justify-content: space-around
+
+@media screen and (max-width: 575.98px)
+  .comment
+    width: 300px
+    padding: 25px 15px
+
+  .account__photo
+    margin-right: 10px
+
+  .coments__arrow-wrapper
+    margin-top: 20px

@@ -1,0 +1,19 @@
+.dropdown{
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+.expandable-checkbox-wrapper{
+  position: absolute;
+  left:0;
+  top: 25px;
+}
+.signInUp-wrapper {
+  height: 684px;
+  width: 100%;
+  background: url('./../images/signInUp-background.png') center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
