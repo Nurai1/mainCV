@@ -2,7 +2,11 @@
   "name": "controlmoneyapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nurai1.github.io/portfolio/controlmoneyapp",
+<<<<<<< HEAD
+  "homepage": "https://nurai1.github.io/controlmoneyapp/build",
+=======
+  "homepage": "https://nurai1.github.io/portfolio/controlmoneyapp/build",
+>>>>>>> 7c8716edb805856803aae3ad310c2226d46776d2
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -21,6 +25,7 @@
     "redux": "^4.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
