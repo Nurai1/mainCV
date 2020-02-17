@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/controlmoneyapp/build/static/css/main.4ecf6a2d.chunk.css",
-    "main.js": "/portfolio/controlmoneyapp/build/static/js/main.f0dfc0a3.chunk.js",
-    "main.js.map": "/portfolio/controlmoneyapp/build/static/js/main.f0dfc0a3.chunk.js.map",
-    "runtime-main.js": "/portfolio/controlmoneyapp/build/static/js/runtime-main.a76acadc.js",
-    "runtime-main.js.map": "/portfolio/controlmoneyapp/build/static/js/runtime-main.a76acadc.js.map",
-    "static/js/2.be503afc.chunk.js": "/portfolio/controlmoneyapp/build/static/js/2.be503afc.chunk.js",
-    "static/js/2.be503afc.chunk.js.map": "/portfolio/controlmoneyapp/build/static/js/2.be503afc.chunk.js.map",
-    "index.html": "/portfolio/controlmoneyapp/build/index.html",
-    "precache-manifest.194aeedcac83b986093cd1c90dc1d68b.js": "/portfolio/controlmoneyapp/build/precache-manifest.194aeedcac83b986093cd1c90dc1d68b.js",
-    "service-worker.js": "/portfolio/controlmoneyapp/build/service-worker.js",
-    "static/css/main.4ecf6a2d.chunk.css.map": "/portfolio/controlmoneyapp/build/static/css/main.4ecf6a2d.chunk.css.map",
-    "static/js/2.be503afc.chunk.js.LICENSE.txt": "/portfolio/controlmoneyapp/build/static/js/2.be503afc.chunk.js.LICENSE.txt"
+    "main.css": "/controlmoneyapp/build/static/css/main.4ecf6a2d.chunk.css",
+    "main.js": "/controlmoneyapp/build/static/js/main.f0dfc0a3.chunk.js",
+    "main.js.map": "/controlmoneyapp/build/static/js/main.f0dfc0a3.chunk.js.map",
+    "runtime-main.js": "/controlmoneyapp/build/static/js/runtime-main.31185e43.js",
+    "runtime-main.js.map": "/controlmoneyapp/build/static/js/runtime-main.31185e43.js.map",
+    "static/js/2.be503afc.chunk.js": "/controlmoneyapp/build/static/js/2.be503afc.chunk.js",
+    "static/js/2.be503afc.chunk.js.map": "/controlmoneyapp/build/static/js/2.be503afc.chunk.js.map",
+    "index.html": "/controlmoneyapp/build/index.html",
+    "precache-manifest.c13e80012b77a28b7b4ebd18b55c45e5.js": "/controlmoneyapp/build/precache-manifest.c13e80012b77a28b7b4ebd18b55c45e5.js",
+    "service-worker.js": "/controlmoneyapp/build/service-worker.js",
+    "static/css/main.4ecf6a2d.chunk.css.map": "/controlmoneyapp/build/static/css/main.4ecf6a2d.chunk.css.map",
+    "static/js/2.be503afc.chunk.js.LICENSE.txt": "/controlmoneyapp/build/static/js/2.be503afc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a76acadc.js",
+    "static/js/runtime-main.31185e43.js",
     "static/js/2.be503afc.chunk.js",
     "static/css/main.4ecf6a2d.chunk.css",
     "static/js/main.f0dfc0a3.chunk.js"
