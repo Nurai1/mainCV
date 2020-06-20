@@ -1,0 +1,69 @@
+/* reset.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* accrordeon.css */
+
+.accordeon-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.accordeon-btn{
+  background: #e8e8e8;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.accordeon-btn:hover{
+  background: #d8d8d8;
+}
+
+.accordeon-block__animatedText{
+  background: #faf9d5;
+  transition: max-height 2s linear;
+  overflow: hidden;
+  padding: 0 20%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .accordeon-block__animatedText{
+    padding: 0 10%;
+  }
+}
+
+.hidden{
+  max-height: 0;
+}
+
+.visible-small{
+  max-height: 275px;
+}
+
+.visible-medium{
+  max-height: 550px;
+}
+
+.visible-high{
+  max-height: 825px;
+}
+
+.padding_styled{
+  display: inline-block;
+  padding: 10px 0;
+}
+
+/* utils.css */
+
+@media (max-width: 500px) {
+  .smallerFont{
+    font-size: 14px;
+  }
+}

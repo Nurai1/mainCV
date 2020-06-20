@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/task-accordeon/build/static/css/main.e4866a40.chunk.css",
+    "main.js": "/task-accordeon/build/static/js/main.0d930298.chunk.js",
+    "main.js.map": "/task-accordeon/build/static/js/main.0d930298.chunk.js.map",
+    "runtime-main.js": "/task-accordeon/build/static/js/runtime-main.af40e5e0.js",
+    "runtime-main.js.map": "/task-accordeon/build/static/js/runtime-main.af40e5e0.js.map",
+    "static/js/2.c67f77cb.chunk.js": "/task-accordeon/build/static/js/2.c67f77cb.chunk.js",
+    "static/js/2.c67f77cb.chunk.js.map": "/task-accordeon/build/static/js/2.c67f77cb.chunk.js.map",
+    "index.html": "/task-accordeon/build/index.html",
+    "precache-manifest.efcaa2ffd5745f0da64b1cb88bcdbee9.js": "/task-accordeon/build/precache-manifest.efcaa2ffd5745f0da64b1cb88bcdbee9.js",
+    "service-worker.js": "/task-accordeon/build/service-worker.js",
+    "static/css/main.e4866a40.chunk.css.map": "/task-accordeon/build/static/css/main.e4866a40.chunk.css.map",
+    "static/js/2.c67f77cb.chunk.js.LICENSE.txt": "/task-accordeon/build/static/js/2.c67f77cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af40e5e0.js",
+    "static/js/2.c67f77cb.chunk.js",
+    "static/css/main.e4866a40.chunk.css",
+    "static/js/main.0d930298.chunk.js"
+  ]
+}

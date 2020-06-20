@@ -16,14 +16,25 @@ window.onload=function(){
     this.zIndex= zIndex;
   }
 
+  function getScreenStyle(element, value){
+    return window.getComputedStyle(element).getPropertyValue(value);
+  }
+
+  function setStyle(element, property, value){
+    element.style[property] = value;
+  }
+
   function updateScreenshots(){
     for(var i = 1; i <= document.getElementsByClassName('screenshot').length; i++){
-        function screenStyle(value){
-          return window.getComputedStyle(document.getElementsByClassName("screenshot-"+i)[0]).getPropertyValue(value);
-        }
-        screenshots[i-1] = new Screen(screenStyle('display'), screenStyle('left'),
-          screenStyle('right'), screenStyle('width'), screenStyle('height'),
-          screenStyle('top'), screenStyle('z-index'));
+        screenshots[i-1] = new Screen(
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'display'),
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'left'),
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'right'),
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'width'),
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'height'),
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'top'),
+          getScreenStyle(document.getElementsByClassName("screenshot-"+i)[0], 'z-index')
+        );
     }
   }
 
@@ -33,27 +44,23 @@ window.onload=function(){
 
     for(var i = 1; i <= document.getElementsByClassName('screenshot').length; i++){
 
-      function setStyle(property, value){
-        window.document.getElementsByClassName("screenshot-"+i)[0].style[property] = value;
-      }
-
       if(i===1){
-        setStyle('display', screenshots[screenshots.length-1].display);
-        setStyle('left', screenshots[screenshots.length-1].posLeft);
-        setStyle('right', screenshots[screenshots.length-1].posRight);
-        setStyle('width', screenshots[screenshots.length-1].w);
-        setStyle('height', screenshots[screenshots.length-1].h);
-        setStyle('top', screenshots[screenshots.length-1].t);
-        setStyle('zIndex', screenshots[screenshots.length-1].zIndex);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'display', screenshots[screenshots.length-1].display);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'left', screenshots[screenshots.length-1].posLeft);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'right', screenshots[screenshots.length-1].posRight);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'width', screenshots[screenshots.length-1].w);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'height', screenshots[screenshots.length-1].h);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'top', screenshots[screenshots.length-1].t);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'zIndex', screenshots[screenshots.length-1].zIndex);
       }
       else{
-        setStyle('display', screenshots[i-2].display);
-        setStyle('left', screenshots[i-2].posLeft);
-        setStyle('right', screenshots[i-2].posRight);
-        setStyle('width', screenshots[i-2].w);
-        setStyle('height', screenshots[i-2].h);
-        setStyle('top', screenshots[i-2].t);
-        setStyle('zIndex', screenshots[i-2].zIndex);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'display', screenshots[i-2].display);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'left', screenshots[i-2].posLeft);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'right', screenshots[i-2].posRight);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'width', screenshots[i-2].w);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'height', screenshots[i-2].h);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'top', screenshots[i-2].t);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'zIndex', screenshots[i-2].zIndex);
       }
     }
     updateScreenshots();
@@ -63,27 +70,23 @@ window.onload=function(){
 
     for(var i = 1; i <= document.getElementsByClassName('screenshot').length; i++){
 
-      function setStyle(property, value){
-        window.document.getElementsByClassName("screenshot-"+i)[0].style[property] = value;
-      }
-
       if(i===screenshots.length){
-        setStyle('display', screenshots[0].display);
-        setStyle('left', screenshots[0].posLeft);
-        setStyle('right', screenshots[0].posRight);
-        setStyle('width', screenshots[0].w);
-        setStyle('height', screenshots[0].h);
-        setStyle('top', screenshots[0].t);
-        setStyle('zIndex', screenshots[0].zIndex);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'display', screenshots[0].display);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'left', screenshots[0].posLeft);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'right', screenshots[0].posRight);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'width', screenshots[0].w);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'height', screenshots[0].h);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'top', screenshots[0].t);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'zIndex', screenshots[0].zIndex);
       }
       else{
-        setStyle('display', screenshots[i].display);
-        setStyle('left', screenshots[i].posLeft);
-        setStyle('right', screenshots[i].posRight);
-        setStyle('width', screenshots[i].w);
-        setStyle('height', screenshots[i].h);
-        setStyle('top', screenshots[i].t);
-        setStyle('zIndex', screenshots[i].zIndex);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'display', screenshots[i].display);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'left', screenshots[i].posLeft);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'right', screenshots[i].posRight);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'width', screenshots[i].w);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'height', screenshots[i].h);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'top', screenshots[i].t);
+        setStyle(document.getElementsByClassName("screenshot-"+i)[0], 'zIndex', screenshots[i].zIndex);
       }
     }
 

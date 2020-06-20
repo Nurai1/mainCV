@@ -44,11 +44,11 @@ $( function() {
 
     //**уменьшение календаря при появлении лишней строки
     setInterval(function(){
-      if(($('#cards__calendar').find('.datepicker--cell').length>=40) || ($('.date-dropdown__calendar_abs-pos').find('.datepicker--cell').length>=40)){
-      $('.datepicker--cell').css('height', '33.33px');
-      $('.-selected-.-range-from-, .-selected-.-range-to-').css('height', '33.33px');
-    }
+      if(($('#cards__calendar').find('.datepicker--cell').length>=40) ||
+         ($('.date-dropdown__calendar_abs-pos').find('.datepicker--cell').length>=40)){
+            $('.datepicker--cell').css('height', '33.33px');
+            $('.-selected-.-range-from-, .-selected-.-range-to-').css('height', '33.33px');
+      }
   }, 1000);
-
 
 })
