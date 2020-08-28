@@ -1,5 +1,0 @@
-// ACTION TYPES
-
-export const ADD_EXPENSES = 'ADD_EXPENSES';
-export const ADD_PURCHASE = 'ADD_PURCHASE';
-export const ADD_GENERAL_SUM = 'ADD_GENERAL_SUM';

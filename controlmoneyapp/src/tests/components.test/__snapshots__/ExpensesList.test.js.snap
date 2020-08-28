@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders expenses list 1`] = `""`;
-
-exports[`renders expenses list 2`] = `
-"<ul class=\\"expensesList\\">
-  <li><a href=\\"/1\\">На категорию \\"food\\" осталось 2000 рублей.</a></li>
-</ul>"
-`;
